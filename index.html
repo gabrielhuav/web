@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriel Hurtado Avilés - Ingeniero en Computación</title>
+    
+    <!-- Meta tags para SEO -->
+    <meta name="description" content="Gabriel Hurtado Avilés - Ingeniero en Computación especializado en desarrollo de software, aprendizaje automático y análisis de datos. Profesor en IPN ESCOM.">
+    <meta name="keywords" content="Ingeniero en Computación, Desarrollo de Software, Machine Learning, Análisis de Datos, IoT, MATLAB, Python, Docente IPN">
+    <meta name="author" content="Gabriel Hurtado Avilés">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <span class="brand-text">Gabriel Hurtado</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Sobre Mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Habilidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experiencia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">Educación</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#publications">Publicaciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#teaching">Docencia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-background">
+            <div class="hero-pattern"></div>
+        </div>
+        <div class="container">
+            <div class="row min-vh-100 align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="hero-content">
+                        <div class="hero-badge">
+                            <i class="fas fa-code"></i>
+                            <span>Disponible para proyectos</span>
+                        </div>
+                        <h1 class="hero-title">
+                            Hola, soy <span class="highlight">Gabriel Hurtado Avilés</span>
+                        </h1>
+                        <h2 class="hero-subtitle">Ingeniero en Computación</h2>
+                        <p class="hero-description">
+                            Desarrollador Full Stack con experiencia en proyectos de aprendizaje automático y análisis de datos. 
+                            Profesor en el IPN ESCOM con participación activa en proyectos de investigación y desarrollo tecnológico.
+                        </p>
+                        
+                        <div class="hero-stats">
+
+                            <div class="stat-item">
+                                <span class="stat-number">Maestría en Ciencias de la Computación</span>
+                                <span class="stat-label">En Progreso, 95%</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">C1</span>
+                                <span class="stat-label">Inglés</span>
+                            </div>
+                        </div>
+                        
+                        <div class="hero-buttons">
+                            <a href="#projects" class="btn btn-primary">
+                                <i class="fas fa-code-branch me-2"></i>Ver Proyectos
+                            </a>
+                            <a href="#contact" class="btn btn-outline">
+                                <i class="fas fa-envelope me-2"></i>Contactar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="hero-image">
+                        <div class="image-container">
+                            <img src="assets/images/gabriel-profile.png" alt="Gabriel Hurtado Avilés" class="profile-img">
+                            <div class="image-decoration"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#about" class="scroll-btn">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5" data-aos="fade-up">
+                    <h2 class="section-title">Sobre Mí</h2>
+                    <p class="section-subtitle">Conoce mi trayectoria y objetivos profesionales</p>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4" data-aos="fade-right">
+                    <div class="about-content">
+                        <h3 class="about-title">¿Quién soy?</h3>
+                        <p class="about-text">
+                            Soy un <strong>Ingeniero en Computación</strong> entusiasta con experiencia en proyectos 
+                            universitarios de programación, aprendizaje automático y análisis de datos. Actualmente 
+                            me desempeño como profesor la ESCOM del IPN y estoy cursando una Maestría en Ciencias de la Computación.
+                        </p>
+                        <p class="about-text">
+                            Mi pasión por la tecnología me ha llevado a especializarme en desarrollo de software, 
+                            IoT, y metodologías ágiles, siempre buscando aplicar soluciones innovadoras a problemas 
+                            complejos de software y hardware.
+                        </p>
+                        
+                        <div class="objectives">
+                            <h4 class="objectives-title">Objetivos Profesionales</h4>
+                            <ul class="objectives-list">
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    Aplicar soluciones a problemas de software y hardware en organizaciones líderes
+                                </li>
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    Implementar metodologías de desarrollo ágiles para mejorar la experiencia de usuario
+                                </li>
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    Desarrollar software mediante pruebas, resolución de problemas y codificación
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4" data-aos="fade-left">
+                    <div class="info-cards">
+                        <div class="info-card">
+                            <div class="card-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="card-content">
+                                <h5>Ubicación</h5>
+                                <p>Ciudad de México, MX</p>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <div class="card-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="card-content">
+                                <h5>Educación Actual</h5>
+                                <p>Maestría en Ciencias de la Computación</p>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <div class="card-icon">
+                                <i class="fas fa-chalkboard-teacher"></i>
+                            </div>
+                            <div class="card-content">
+                                <h5>Posición Actual</h5>
+                                <p>Profesor en IPN ESCOM</p>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <div class="card-icon">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <div class="card-content">
+                                <h5>Idiomas</h5>
+                                <p>Español (Nativo), Inglés (C1), Alemán (A1)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section-padding bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5" data-aos="fade-up">
+                    <h2 class="section-title">Habilidades Técnicas</h2>
+                    <p class="section-subtitle">Tecnologías y herramientas que domino</p>
+                </div>
+            </div>
+            
+            <!-- Programming Languages -->
+            <div class="row mb-5">
+                <div class="col-lg-6 mb-4" data-aos="fade-right">
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <i class="fas fa-code"></i>
+                            <h4>Lenguajes de Programación</h4>
+                        </div>
+                        <div class="skills-grid">
+                            <div class="skill-tag featured">Python</div>
+                            <div class="skill-tag featured">Java</div>
+                            <div class="skill-tag featured">Kotlin</div>
+                            <div class="skill-tag">JavaScript</div>
+                            <div class="skill-tag">C++</div>
+                            <div class="skill-tag">MATLAB</div>
+                            <div class="skill-tag">Dart</div>
+                            <div class="skill-tag">PHP</div>
+                            <div class="skill-tag">HTML/CSS</div>
+                            <div class="skill-tag">SQL</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Frameworks & Tools -->
+                <div class="col-lg-6 mb-4" data-aos="fade-left">
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <i class="fas fa-tools"></i>
+                            <h4>Frameworks y Herramientas</h4>
+                        </div>
+                        <div class="skills-grid">
+                            <div class="skill-tag featured">Django</div>
+                            <div class="skill-tag featured">Spring Boot</div>
+                            <div class="skill-tag featured">Git & GitHub</div>
+                            <div class="skill-tag">Qt & QML</div>
+                            <div class="skill-tag">Linux</div>
+                            <div class="skill-tag">Jira</div>
+                            <div class="skill-tag">Verilog</div>
+                            <div class="skill-tag">Office Suite</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Technology Icons -->
+			<div class="row mb-5">
+				<div class="col-12 text-center">
+					<h4 class="tech-icons-title">Tecnologías que uso</h4>
+					<div class="tech-icons">
+						<i class="fab fa-python" title="Python"></i>
+						<i class="fab fa-java" title="Java"></i>
+						<i class="fas fa-leaf" title="Spring Boot"></i>
+						<i class="fab fa-js-square" title="JavaScript"></i>
+						<i class="fab fa-html5" title="HTML5"></i>
+						<i class="fab fa-css3-alt" title="CSS3"></i>
+						<i class="fab fa-python" title="Django"></i>						
+						<i class="fab fa-git-alt" title="Git"></i>						
+						<i class="fab fa-github" title="GitHub"></i>
+						<i class="fab fa-linux" title="Linux"></i>
+						<i class="fab fa-android" title="Android/Kotlin"></i>
+						<i class="fas fa-database" title="SQL"></i>
+					</div>
+				</div>
+</div>
+            
+            <!-- Specializations -->
+            <div class="row">
+                <div class="col-12" data-aos="fade-up">
+                    <div class="specializations">
+                        <h4 class="spec-title">Especialidades</h4>
+                        <div class="spec-grid">
+                            <div class="spec-item">
+                                <i class="fas fa-robot"></i>
+                                <span>Aprendizaje Automático</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-chart-line"></i>
+                                <span>Análisis de Datos</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-microchip"></i>
+                                <span>Internet de las Cosas</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-cogs"></i>
+                                <span>Desarrollo de Software</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-project-diagram"></i>
+                                <span>Metodologías Ágiles</span>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-brain"></i>
+                                <span>Grandes Modelos de Lenguaje</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5" data-aos="fade-up">
+                    <h2 class="section-title">Mis Proyectos</h2>
+                    <p class="section-subtitle">Algunos de mis trabajos más destacados en GitHub</p>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Project 1 -->
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/images/project1.jpg" alt="Proyecto 1" class="img-fluid">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" target="_blank" class="btn btn-light btn-sm me-2">
+                                        <i class="fas fa-eye"></i> Demo
+                                    </a>
+                                    <a href="https://github.com/gabrielhuav" target="_blank" class="btn btn-outline-light btn-sm">
+                                        <i class="fab fa-github"></i> Código
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h5>Sistema de Control IoT</h5>
+                            <p class="project-description">
+                                Sistema de control para dispositivos IoT utilizando MATLAB y sensores inteligentes 
+                                para automatización industrial.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-badge matlab">MATLAB</span>
+                                <span class="tech-badge iot">IoT</span>
+                                <span class="tech-badge python">Python</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/images/project2.jpg" alt="Proyecto 2" class="img-fluid">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" target="_blank" class="btn btn-light btn-sm me-2">
+                                        <i class="fas fa-eye"></i> Demo
+                                    </a>
+                                    <a href="https://github.com/gabrielhuav" target="_blank" class="btn btn-outline-light btn-sm">
+                                        <i class="fab fa-github"></i> Código
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h5>Algoritmo de Detección de Fraude</h5>
+                            <p class="project-description">
+                                Implementación de algoritmos metaheurísticos para la detección de fraude digital 
+                                con técnicas de machine learning.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-badge python">Python</span>
+                                <span class="tech-badge ml">Machine Learning</span>
+                                <span class="tech-badge data">Data Science</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/images/project3.jpg" alt="Proyecto 3" class="img-fluid">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" target="_blank" class="btn btn-light btn-sm me-2">
+                                        <i class="fas fa-eye"></i> Demo
+                                    </a>
+                                    <a href="https://github.com/gabrielhuav" target="_blank" class="btn btn-outline-light btn-sm">
+                                        <i class="fab fa-github"></i> Código
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h5>Aplicación Web con Django</h5>
+                            <p class="project-description">
+                                Desarrollo de aplicación web completa utilizando Django para gestión de datos 
+                                académicos con interfaz responsiva.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-badge django">Django</span>
+                                <span class="tech-badge js">JavaScript</span>
+                                <span class="tech-badge db">PostgreSQL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 4 -->
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/images/project4.jpg" alt="Proyecto 4" class="img-fluid">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" target="_blank" class="btn btn-light btn-sm me-2">
+                                        <i class="fas fa-eye"></i> Demo
+                                    </a>
+                                    <a href="https://github.com/gabrielhuav" target="_blank" class="btn btn-outline-light btn-sm">
+                                        <i class="fab fa-github"></i> Código
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h5>Interfaz de Usuario con Qt</h5>
+                            <p class="project-description">
+                                Desarrollo de interfaz gráfica moderna utilizando Qt y QML para aplicaciones 
+                                de escritorio multiplataforma.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-badge qt">Qt</span>
+                                <span class="tech-badge qml">QML</span>
+                                <span class="tech-badge cpp">C++</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 5 -->
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="500">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/images/project5.jpg" alt="Proyecto 5" class="img-fluid">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" target="_blank" class="btn btn-light btn-sm me-2">
+                                        <i class="fas fa-eye"></i> Demo
+                                    </a>
+                                    <a href="https://github.com/gabrielhuav" target="_blank" class="btn btn-outline-light btn-sm">
+                                        <i class="fab fa-github"></i> Código
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h5>API REST con Spring Boot</h5>
+                            <p class="project-description">
+                                Desarrollo de API REST robusta utilizando Spring Boot para servicios web 
+                                escalables con autenticación JWT.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-badge spring">Spring Boot</span>
+                                <span class="tech-badge java">Java</span>
+                                <span class="tech-badge api">REST API</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 6 -->
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="600">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/images/project6.jpg" alt="Proyecto 6" class="img-fluid">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" target="_blank" class="btn btn-light btn-sm me-2">
+                                        <i class="fas fa-eye"></i> Demo
+                                    </a>
+                                    <a href="https://github.com/gabrielhuav" target="_blank" class="btn btn-outline-light btn-sm">
+                                        <i class="fab fa-github"></i> Código
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h5>Análisis de Datos Académicos</h5>
+                            <p class="project-description">
+                                Herramienta de análisis de datos académicos utilizando Python y bibliotecas 
+                                de ciencia de datos para insights educativos.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-badge python">Python</span>
+                                <span class="tech-badge pandas">Pandas</span>
+                                <span class="tech-badge viz">Matplotlib</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- GitHub Link -->
+            <div class="row mt-4">
+                <div class="col-12 text-center" data-aos="fade-up">
+                    <a href="https://github.com/gabrielhuav" target="_blank" class="btn btn-outline-primary btn-lg">
+                        <i class="fab fa-github me-2"></i>Ver más proyectos en GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section-padding bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5" data-aos="fade-up">
+                    <h2 class="section-title">Experiencia Profesional</h2>
+                    <p class="section-subtitle">Mi trayectoria profesional y proyectos</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1">
+                    <div class="timeline">
+                        <!-- Current Position -->
+                        <div class="timeline-item" data-aos="fade-up">
+                            <div class="timeline-marker current">
+                                <i class="fas fa-chalkboard-teacher"></i>
+                            </div>
+                            <div class="timeline-content current">
+                                <div class="timeline-header">
+                                    <h5>Profesor en el Departamento de Ciencias e Ingeniería de la Computación</h5>
+                                    <span class="company">Instituto Politécnico Nacional - ESCOM</span>
+                                    <span class="period">Agosto 2024 - Actualidad</span>
+                                </div>
+                                <p class="timeline-description">
+                                    Docencia en materias relacionadas con programación, desarrollo de software y tecnologías 
+                                    emergentes. Supervisión de proyectos estudiantiles en áreas de IoT, machine learning y 
+                                    desarrollo de aplicaciones.
+                                </p>
+                                <div class="timeline-tags">
+                                    <span class="tag">Docencia</span>
+                                    <span class="tag">Programación</span>
+                                    <span class="tag">Proyectos</span>
+                                    <span class="tag">Investigación</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Weldmation Project -->
+                        <div class="timeline-item" data-aos="fade-up">
+                            <div class="timeline-marker">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <div class="timeline-header">
+                                    <h5>Ingeniero de Proyecto / Customer Interface Experience Developer</h5>
+                                    <span class="company">Weldmation de México / Ford México</span>
+                                    <span class="period">Diciembre 2021 - Junio 2023</span>
+                                </div>
+                                <p class="timeline-description">
+                                    Desarrollo de interfaces de usuario para tableros de instrumentos utilizando QML y Qt. Desarrollo  
+                                    de experiencias de interfaz para clientes. Gestión de proyectos con metodologías ágiles y colaboración 
+                                    en equipos multidisciplinarios para la implementación de soluciones tecnológicas innovadoras.
+                                </p>
+                                <div class="timeline-tags">
+                                    <span class="tag">QML</span>
+                                    <span class="tag">Qt</span>
+                                    <span class="tag">JavaScript</span>
+                                    <span class="tag">GitHub</span>
+                                    <span class="tag">Jira</span>
+                                    <span class="tag">UX/UI</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- TTEC -->
+                        <div class="timeline-item" data-aos="fade-up">
+                            <div class="timeline-marker">
+                                <i class="fas fa-headset"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <div class="timeline-header">
+                                    <h5>Bilingual Customer Service Representative</h5>
+                                    <span class="company">TTEC</span>
+                                    <span class="period">Experiencia profesional</span>
+                                </div>
+                                <p class="timeline-description">
+                                    Atención al cliente bilingüe con enfoque en transformación digital a través de 
+                                    tecnologías basadas en la nube. Desarrollo de habilidades de comunicación intercultural 
+                                    y experiencia en soporte técnico.
+                                </p>
+                                <div class="timeline-tags">
+                                    <span class="tag">Comunicación</span>
+                                    <span class="tag">Cloud Technology</span>
+                                    <span class="tag">Bilingüe</span>
+                                    <span class="tag">Soporte Técnico</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5" data-aos="fade-up">
+                    <h2 class="section-title">Educación</h2>
+                    <p class="section-subtitle">Formación académica y certificaciones</p>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Current Education -->
+                <div class="col-lg-6 mb-4" data-aos="fade-right">
+                    <div class="education-card current">
+                        <div class="card-header">
+                            <div class="education-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="status-badge current">En Progreso</div>
+                        </div>
+                        <div class="card-body">
+                            <h5>Maestría en Ciencias de la Computación</h5>
+                            <h6>Universidad Autónoma Metropolitana</h6>
+                            <p class="institution">Unidad Azcapotzalco</p>
+                            <span class="period">2023 - 2025</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 mb-4" data-aos="fade-left">
+                    <div class="education-card current">
+                        <div class="card-header">
+                            <div class="education-icon">
+                                <i class="fas fa-chalkboard-teacher"></i>
+                            </div>
+                            <div class="status-badge current">En Progreso</div>
+                        </div>
+                        <div class="card-body">
+                            <h5>Maestría en Docencia para la Educación Media Superior - Área Matemáticas</h5>
+                            <h6>Universidad Nacional Autónoma de México (UNAM) </h6>
+                            <p class="institution">Facultad de Estudios Superiores Acatlán</p>
+                            <span class="period">2023 - 2025</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Completed Education -->
+                <div class="col-lg-12 mb-4" data-aos="fade-up">
+                    <div class="education-card completed">
+                        <div class="card-header">
+                            <div class="education-icon">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <div class="status-badge completed">Completado</div>
+                        </div>
+                        <div class="card-body">
+                            <h5>Ingeniería en Computación</h5>
+                            <h6>Universidad Autónoma Metropolitana</h6>
+                            <p class="institution">Unidad Azcapotzalco</p>
+                            <span class="period">2017 - 2022</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Certifications -->
+            <div class="row mt-5">
+                <div class="col-12 text-center mb-4">
+                    <h4 class="certifications-title">Certificaciones y Formación Complementaria</h4>
+                </div>
+                <div class="col-lg-4 mb-3" data-aos="fade-up" data-aos-delay="100">
+                    <div class="certification-card">
+                        <div class="cert-icon">
+                            <i class="fas fa-microchip"></i>
+                        </div>
+                        <div class="cert-content">
+                            <h6>Internet de las Cosas</h6>
+                            <p class="cert-org">Samsung Innovation Campus</p>
+                            <p class="cert-details">160 horas - Proyecto CAPSTONE</p>
+                            <span class="cert-year">2021-2022</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-3" data-aos="fade-up" data-aos-delay="200">
+                    <div class="certification-card">
+                        <div class="cert-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="cert-content">
+                            <h6>Inglés Avanzado (C1)</h6>
+                            <p class="cert-org">The Anglo Mexican Foundation</p>
+                            <p class="cert-details">Nivel C1.4, C1.5, C1.6 - 144 horas</p>
+                            <span class="cert-year">2023-2024</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-3" data-aos="fade-up" data-aos-delay="300">
+                    <div class="certification-card">
+                        <div class="cert-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <div class="cert-content">
+                            <h6>Cambridge FCE</h6>
+                            <p class="cert-org">Universidad Nacional Autónoma de México</p>
+                            <p class="cert-details">Preparación FCE 2 y FCE 3 - Nivel B2</p>
+                            <span class="cert-year">2020-2021</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" class="section-padding bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5" data-aos="fade-up">
+                    <h2 class="section-title">Publicaciones</h2>
+                    <p class="section-subtitle">Contribuciones académicas y de investigación</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mb-4" data-aos="fade-right">
+                    <div class="publication-card">
+                        <div class="pub-header">
+                            <div class="pub-icon">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <div class="pub-type">Capítulo de Libro - Autor Principal</div>
+                        </div>
+                        <div class="pub-content">
+                            <h5>Representación ontológica de la arquitectura de control de un robot SCARA utilizando IoT y MATLAB</h5>
+                            <p class="pub-book">
+                                <strong>Libro:</strong> "Avances recientes en el proceso de lenguaje natural y otras áreas afines"
+                            </p>
+                            <div class="pub-details">
+                                <span class="pub-isbn">ISBN: 978-607-5914-56-5</span>
+                                <span class="pub-year">2024</span>
+                            </div>
+                            <div class="pub-tags">
+                                <span class="tag">IoT</span>
+                                <span class="tag">MATLAB</span>
+                                <span class="tag">Robótica</span>
+                                <span class="tag">Control</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4" data-aos="fade-left">
+                    <div class="publication-card">
+                        <div class="pub-header">
+                            <div class="pub-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div class="pub-type">Capítulo de Libro - Autor Principal</div>
+                        </div>
+                        <div class="pub-content">
+                            <h5>Calibración de hiper-parámetros en algoritmos metaheurísticos para la detección de fraude digital</h5>
+                            <p class="pub-book">
+                                <strong>Libro:</strong> "Avances recientes en el proceso de lenguaje natural y otras áreas afines"
+                            </p>
+                            <div class="pub-details">
+                                <span class="pub-isbn">ISBN: 978-607-5914-56-5</span>
+                                <span class="pub-year">2024</span>
+                            </div>
+                            <div class="pub-tags">
+                                <span class="tag">Machine Learning</span>
+                                <span class="tag">Metaheurísticos</span>
+                                <span class="tag">Ciberseguridad</span>
+                                <span class="tag">Fraude Digital</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Teaching Section -->
+    <section id="teaching" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5" data-aos="fade-up">
+                    <h2 class="section-title">Docencia</h2>
+                    <p class="section-subtitle">Proyectos destacados de mis estudiantes</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12" data-aos="fade-up">
+                    <div class="teaching-showcase">
+                        <div class="showcase-header">
+                            <div class="showcase-icon">
+                                <i class="fas fa-users-cog"></i>
+                            </div>
+                            <h4>Galería de Proyectos Estudiantiles</h4>
+                            <p class="showcase-description">
+                                Como profesor de la ESCOM IPN, he tenido el privilegio de guiar a estudiantes 
+                                talentosos en el desarrollo de proyectos innovadores en áreas como IoT, 
+                                desarrollo de software, machine learning y análisis de datos.
+                            </p>
+                        </div>
+                        
+                        <div class="student-projects-link">
+                            <a href="https://gabrielhuav.github.io/student-projects/" target="_blank" class="btn btn-primary">
+                                <i class="fas fa-external-link-alt me-2"></i>Ver Proyectos de Estudiantes
+                            </a>
+                            <p class="link-description">
+                                Explora los proyectos desarrollados por mis estudiantes durante el curso
+                            </p>
+                        </div>
+                        
+                        <!-- Preview Cards -->
+                        <div class="row project-previews">
+                            <div class="col-lg-4 mb-3" data-aos="fade-up" data-aos-delay="100">
+                                <div class="preview-card">
+                                    <div class="preview-icon">
+                                        <i class="fas fa-mobile-alt"></i>
+                                    </div>
+                                    <h6>Aplicaciones Móviles</h6>
+                                    <p>Desarrollo de apps Android con Kotlin y Flutter</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 mb-3" data-aos="fade-up" data-aos-delay="200">
+                                <div class="preview-card">
+                                    <div class="preview-icon">
+                                        <i class="fas fa-microchip"></i>
+                                    </div>
+                                    <h6>Proyectos IoT</h6>
+                                    <p>Sistemas embebidos con sensores inteligentes</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 mb-3" data-aos="fade-up" data-aos-delay="300">
+                                <div class="preview-card">
+                                    <div class="preview-icon">
+                                        <i class="fas fa-brain"></i>
+                                    </div>
+                                    <h6>Machine Learning</h6>
+                                    <p>Algoritmos de aprendizaje automático aplicados</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5" data-aos="fade-up">
+                    <h2 class="section-title">Contacto</h2>
+                    <p class="section-subtitle">¿Interesado en colaborar? ¡Pongámonos en contacto!</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="contact-grid">
+                        <div class="contact-info" data-aos="fade-up" data-aos-delay="100">
+                            <div class="contact-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h5>GitHub</h5>
+                                <a href="https://github.com/gabrielhuav" target="_blank">
+                                    github.com/gabrielhuav
+                                </a>
+                            </div>
+                        </div>
+                        <div class="contact-info" data-aos="fade-up" data-aos-delay="200">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h5>Ubicación</h5>
+                                <p>Ciudad de México, México</p>
+                            </div>
+                        </div>
+                    </div>
+
+					<div class="contact-form-container" data-aos="fade-up">
+						<h4 class="form-title">Contáctame directamente</h4>
+						<p>Haz clic en el siguiente enlace para enviarme un correo desde tu cliente de email:</p>
+						<div class="text-center">
+							<a href="mailto:ghurtadoa@ipn.mx" class="btn btn-primary">
+								<i class="fas fa-envelope me-2"></i>Enviar correo
+							</a>
+						</div>
+					</div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="footer-text">&copy; 2024 Gabriel Hurtado Avilés. Todos los derechos reservados.</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <div class="social-links">
+                        <a href="https://github.com/gabrielhuav" target="_blank" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" title="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" title="ResearchGate">
+                            <i class="fab fa-researchgate"></i>
+                        </a>
+                        <a href="#" title="ORCID">
+                            <i class="fab fa-orcid"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
