@@ -76,6 +76,53 @@ function animateCounters() {
     });
 }
 
+document.addEventListener('DOMContentLoaded', function() {
+    // Carrusel automático para imágenes de proyectos
+    const carousels = document.querySelectorAll('.project-image-carousel');
+    
+    carousels.forEach(carousel => {
+        const images = carousel.querySelectorAll('.carousel-image');
+        const indicators = carousel.querySelectorAll('.indicator');
+        let currentIndex = 0;
+        
+        function showImage(index) {
+            // Ocultar todas las imágenes
+            images.forEach(img => img.classList.remove('active'));
+            indicators.forEach(ind => ind.classList.remove('active'));
+            
+            // Mostrar imagen actual
+            images[index].classList.add('active');
+            indicators[index].classList.add('active');
+        }
+        
+        function nextImage() {
+            currentIndex = (currentIndex + 1) % images.length;
+            showImage(currentIndex);
+        }
+        
+        // Cambiar imagen cada 3 segundos
+        setInterval(nextImage, 3000);
+        
+        // Click en indicadores
+        indicators.forEach((indicator, index) => {
+            indicator.addEventListener('click', () => {
+                currentIndex = index;
+                showImage(currentIndex);
+            });
+        });
+        
+        // Pausar en hover
+        carousel.addEventListener('mouseenter', () => {
+            carousel.classList.add('paused');
+        });
+        
+        carousel.addEventListener('mouseleave', () => {
+            carousel.classList.remove('paused');
+        });
+    });
+});
+
+
 // Trigger counter animation when in viewport
 const observeCounters = new IntersectionObserver((entries) => {
     entries.forEach(entry => {

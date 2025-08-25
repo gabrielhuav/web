@@ -216,6 +216,136 @@ section.bg-light {
     background-color: var(--gray-50);
 }
 
+/* Carrusel de imágenes para proyectos */
+.project-image-carousel {
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.carousel-image.active {
+    opacity: 1;
+}
+
+/* Indicadores del carrusel */
+.carousel-indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 5px;
+    z-index: 3;
+}
+
+.indicator {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: background var(--transition-fast);
+}
+
+.indicator.active {
+    background: var(--white);
+}
+
+/* Overlay mejorado para 3 botones */
+.project-overlay .project-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+/* Botón de preview deshabilitado */
+.btn.disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.btn.disabled small {
+    font-size: 0.6rem;
+    opacity: 0.8;
+    margin-top: -2px;
+}
+
+/* Badges de tecnología */
+.tech-badge.docker { 
+    background: #2496ed; 
+    color: var(--white); 
+}
+
+.tech-badge.i18n { 
+    background: #6366f1; 
+    color: var(--white); 
+}
+
+/* Animación de hover para el carrusel */
+.project-card:hover .carousel-image.active {
+    transform: scale(1.05);
+}
+
+/* Responsive para el carrusel */
+@media (max-width: 768px) {
+    .project-overlay .project-links {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0.25rem;
+    }
+    
+    .btn {
+        font-size: 0.75rem;
+        padding: 0.5rem 0.75rem;
+    }
+    
+    .btn small {
+        font-size: 0.5rem;
+    }
+}
+
+/* Mejorar espaciado para 2 columnas */
+@media (min-width: 992px) {
+    .projects-section .col-lg-6 {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    .project-card {
+        height: 100%;
+        min-height: 450px;
+    }
+}
+
+/* Ajustar altura del carrusel para mejor proporción */
+.project-image-carousel {
+    height: 280px;
+}
+
+.project-image {
+    height: 280px;
+}
+
 /* Hero Section - Fix overlap issues */
 .hero-section {
     position: relative;
@@ -801,7 +931,7 @@ section.bg-light {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(37, 99, 235, 0.9);
+    background: linear-gradient(135deg, rgba(37, 99, 235, 0.25), rgba(16, 185, 129, 0.15));
     display: flex;
     align-items: center;
     justify-content: center;
@@ -853,6 +983,135 @@ section.bg-light {
     font-weight: var(--font-weight-medium);
     color: var(--white);
 }
+
+/* badges de postgres y bootstrap */
+.tech-badge.postgres { 
+    background: #336791; 
+    color: var(--white); 
+}
+
+.tech-badge.bootstrap { 
+    background: #7952b3; 
+    color: var(--white); 
+}
+
+.tech-badge.api { 
+    background: #61dafb; 
+    color: var(--gray-900); 
+}
+
+/* badges para el proyecto sísmico */
+.tech-badge.php { 
+    background: #777bb4; 
+    color: var(--white); 
+}
+
+.tech-badge.geo { 
+    background: #2e7d32; 
+    color: var(--white); 
+}
+
+/* Actualizar el badge de data visualization */
+.tech-badge.data { 
+    background: #ff6b35; 
+    color: var(--white); 
+}
+
+/* Nuevos badges para el proyecto móvil */
+.tech-badge.kotlin { 
+    background: #7f52ff; 
+    color: var(--white); 
+}
+
+.tech-badge.android { 
+    background: #3ddc84; 
+    color: var(--gray-900); 
+}
+
+.tech-badge.bluetooth { 
+    background: #0082fc; 
+    color: var(--white); 
+}
+
+.tech-badge.education { 
+    background: #ff6b35; 
+    color: var(--white); 
+}
+
+.tech-badge.gamedev { 
+    background: #e91e63; 
+    color: var(--white); 
+}
+
+.tech-badge.binary { 
+    background: #424242; 
+    color: var(--white); 
+}
+
+.tech-badge.ascii { 
+    background: #795548; 
+    color: var(--white); 
+}
+
+/* Nuevos badges para IA y NLP */
+.tech-badge.distilbert { 
+    background: #ff6f00; 
+    color: var(--white); 
+}
+
+.tech-badge.nlp { 
+    background: #9c27b0; 
+    color: var(--white); 
+}
+
+.tech-badge.transformers { 
+    background: #f44336; 
+    color: var(--white); 
+}
+
+.tech-badge.html { 
+    background: #e34f26; 
+    color: var(--white); 
+}
+
+/* Actualizar el badge de ML para distinguirlo */
+.tech-badge.ml { 
+    background: #4caf50; 
+    color: var(--white); 
+}
+
+/* Nuevos badges para juego móvil con sensores */
+.tech-badge.sensors { 
+    background: #ff5722; 
+    color: var(--white); 
+}
+
+.tech-badge.maps { 
+    background: #4caf50; 
+    color: var(--white); 
+}
+
+.tech-badge.mobile { 
+    background: #607d8b; 
+    color: var(--white); 
+}
+
+/* Ya tenemos estos badges definidos anteriormente */
+.tech-badge.kotlin { 
+    background: #7f52ff; 
+    color: var(--white); 
+}
+
+.tech-badge.android { 
+    background: #3ddc84; 
+    color: var(--gray-900); 
+}
+
+.tech-badge.gamedev { 
+    background: #e91e63; 
+    color: var(--white); 
+}
+
 
 .tech-badge.python { background: #3776ab; }
 .tech-badge.java { background: #f89820; }
