@@ -2008,3 +2008,133 @@ section.bg-light {
         box-shadow: none !important;
     }
 }
+/* ===== Project category filters (Web / Android) ===== */
+.project-filters {
+    display: inline-flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: #f1f5f9;
+    padding: 0.4rem;
+    border-radius: 50px;
+}
+.filter-btn {
+    border: none;
+    background: transparent;
+    color: var(--secondary-color);
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 0.5rem 1.4rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+.filter-btn:hover { color: var(--primary-color); }
+.filter-btn.active {
+    background: var(--primary-color);
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
+}
+
+/* ===== Course credit badge ===== */
+.course-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    background: rgba(37, 99, 235, 0.08);
+    border: 1px solid rgba(37, 99, 235, 0.2);
+    padding: 0.2rem 0.65rem;
+    border-radius: 50px;
+    text-decoration: none;
+    margin-bottom: 0.6rem;
+    transition: all 0.2s ease;
+}
+.course-badge:hover { background: var(--primary-color); color: #fff; }
+.course-badge i { font-size: 0.78rem; }
+
+/* ===== Project double-carousel showcase ===== */
+.project-showcase { max-width: 1000px; margin: 0 auto 3.5rem; }
+.project-showcase:last-of-type { margin-bottom: 1rem; }
+.showcase-title { font-size: 1.4rem; font-weight: 700; color: var(--primary-dark); text-align: center; margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: center; gap: 0.5rem; }
+.showcase-title i { color: var(--primary-color); }
+.showcase-stage { display: flex; align-items: center; gap: 0.75rem; }
+.sc-arrow { flex: 0 0 auto; width: 46px; height: 46px; border-radius: 50%; border: none; background: var(--primary-color); color: #fff; font-size: 1rem; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.2s ease; box-shadow: 0 4px 14px rgba(37,99,235,0.3); }
+.sc-arrow:hover { background: var(--primary-dark); transform: scale(1.08); }
+.showcase-card { flex: 1 1 auto; min-width: 0; display: grid; grid-template-columns: 1.05fr 0.95fr; background: #fff; border-radius: 18px; overflow: hidden; box-shadow: 0 12px 40px rgba(15,23,42,0.12); }
+.showcase-media { position: relative; background: #0b1f3a; display: flex; align-items: center; justify-content: center; min-height: 340px; overflow: hidden; }
+.sc-img { max-width: 100%; max-height: 380px; width: auto; height: auto; object-fit: contain; display: block; }
+.sc-img-arrow { position: absolute; top: 50%; transform: translateY(-50%); width: 36px; height: 36px; border-radius: 50%; border: none; background: rgba(0,0,0,0.45); color: #fff; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: background 0.2s; z-index: 2; }
+.sc-img-arrow:hover { background: rgba(0,0,0,0.75); }
+.sc-img-prev { left: 10px; }
+.sc-img-next { right: 10px; }
+.sc-dots { position: absolute; bottom: 10px; left: 0; right: 0; display: flex; gap: 6px; justify-content: center; z-index: 2; }
+.sc-dot { width: 8px; height: 8px; border-radius: 50%; background: rgba(255,255,255,0.45); cursor: pointer; transition: all 0.2s; }
+.sc-dot.active { background: #fff; width: 22px; border-radius: 5px; }
+.showcase-info { padding: 1.75rem; display: flex; flex-direction: column; }
+.sc-name { font-size: 1.3rem; font-weight: 700; color: #1e293b; margin: 0.2rem 0 0.6rem; }
+.sc-desc { color: var(--secondary-color); font-size: 0.95rem; line-height: 1.6; margin-bottom: 1rem; flex: 1 0 auto; }
+.showcase-tech { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 1rem; }
+.showcase-links { display: flex; flex-wrap: wrap; }
+.sc-counter { text-align: center; font-weight: 700; color: var(--secondary-color); margin: 1rem 0 0.75rem; letter-spacing: 1px; }
+.sc-pills { display: flex; gap: 0.5rem; overflow-x: auto; padding: 0.25rem 0.25rem 0.75rem; scrollbar-width: thin; }
+.sc-pill { flex: 0 0 auto; border: 1px solid #e2e8f0; background: #fff; color: var(--secondary-color); font-size: 0.82rem; font-weight: 600; padding: 0.4rem 0.9rem; border-radius: 50px; cursor: pointer; white-space: nowrap; transition: all 0.2s; }
+.sc-pill:hover { border-color: var(--primary-color); color: var(--primary-color); }
+.sc-pill.active { background: var(--primary-color); border-color: var(--primary-color); color: #fff; }
+@media (max-width: 768px) {
+    .showcase-card { grid-template-columns: 1fr; }
+    .showcase-media { min-height: 260px; }
+    .sc-img { max-height: 300px; }
+    .sc-arrow { width: 38px; height: 38px; }
+    .showcase-stage { gap: 0.35rem; }
+    .showcase-info { padding: 1.25rem; }
+}
+
+/* ===== Official Play Store apps: verified checkmark ===== */
+.sc-verified {
+    display: none;
+    align-items: center;
+    gap: 0.35rem;
+    align-self: flex-start;
+    background: #16a34a;
+    color: #fff;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    padding: 0.22rem 0.65rem;
+    border-radius: 50px;
+    text-decoration: none;
+    margin-bottom: 0.55rem;
+}
+.sc-verified:hover { background: #15803d; color: #fff; }
+.sc-verified i { font-size: 0.85rem; }
+.sc-media-check {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 3;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #16a34a;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+.sc-media-check:hover { background: #15803d; color: #fff; }
+.sc-pill-check { color: #16a34a; margin-left: 0.3rem; }
+.sc-pill.active .sc-pill-check { color: #fff; }
+
+
+/* ===== Publication DOI link ===== */
+.pub-doi { display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.82rem; font-weight: 600; color: var(--primary-color); text-decoration: none; margin: 0.25rem 0 0.85rem; }
+.pub-doi:hover { text-decoration: underline; }
+.pub-doi i { font-size: 0.72rem; }

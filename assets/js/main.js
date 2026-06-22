@@ -388,3 +388,168 @@ Si estás viendo esto, probablemente eres un desarrollador curioso.
 
 Portafolio creado con ❤️ usando Bootstrap 5
 `);
+// ===== Project category filter (All / Web / Android) =====
+document.addEventListener('DOMContentLoaded', function () {
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const grid = document.getElementById('projectsGrid');
+    if (!filterBtns.length || !grid) return;
+    const items = grid.querySelectorAll('[data-category]');
+    filterBtns.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+            filterBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            const f = btn.getAttribute('data-filter');
+            items.forEach(function (it) {
+                const show = (f === 'all') || (it.getAttribute('data-category') === f);
+                it.style.display = show ? '' : 'none';
+            });
+            if (window.AOS && AOS.refresh) AOS.refresh();
+        });
+    });
+});
+
+// ===== Project double-carousel showcase (outer = projects, inner = images) =====
+(function () {
+    function initShowcase(id, projects, labels) {
+        var root = document.getElementById(id);
+        if (!root || !projects || !projects.length) return;
+        var media = root.querySelector('.showcase-media');
+        var img = root.querySelector('.sc-img');
+        var dots = root.querySelector('.sc-dots');
+        var badge = root.querySelector('.sc-badge');
+        var badgeText = root.querySelector('.sc-badge-text');
+        var nameEl = root.querySelector('.sc-name');
+        var descEl = root.querySelector('.sc-desc');
+        var techEl = root.querySelector('.sc-tech');
+        var linksEl = root.querySelector('.sc-links');
+        var counter = root.querySelector('.sc-counter');
+        var pills = root.querySelector('.sc-pills');
+        var imgPrev = root.querySelector('.sc-img-prev');
+        var imgNext = root.querySelector('.sc-img-next');
+        var pi = 0, ii = 0, timer = null;
+
+        var isES = (document.documentElement.lang || '').toLowerCase().indexOf('es') === 0;
+        function getPlay(p) {
+            for (var i = 0; i < (p.links || []).length; i++) {
+                if ((p.links[i].url || '').indexOf('play.google.com') !== -1) return p.links[i].url;
+            }
+            return null;
+        }
+        projects.forEach(function (p, idx) {
+            var b = document.createElement('button');
+            b.className = 'sc-pill';
+            b.type = 'button';
+            if (getPlay(p)) {
+                b.innerHTML = p.name + ' <i class="fas fa-circle-check sc-pill-check"></i>';
+                b.title = isES ? 'App oficial en Google Play' : 'Official app on Google Play';
+            } else {
+                b.textContent = p.name;
+            }
+            b.addEventListener('click', function () { pi = idx; renderProject(); });
+            pills.appendChild(b);
+        });
+
+        // Official Play Store apps get a verified check in the info panel and on the media corner.
+        var verified = document.createElement('a');
+        verified.className = 'sc-verified';
+        verified.target = '_blank';
+        verified.rel = 'noopener';
+        verified.innerHTML = '<i class="fas fa-circle-check"></i> ' + (isES ? 'Oficial · Google Play' : 'Official · Google Play');
+        nameEl.parentNode.insertBefore(verified, nameEl);
+        var mediaCheck = document.createElement('a');
+        mediaCheck.className = 'sc-media-check';
+        mediaCheck.target = '_blank';
+        mediaCheck.rel = 'noopener';
+        mediaCheck.title = isES ? 'App oficial en Google Play' : 'Official app on Google Play';
+        mediaCheck.innerHTML = '<i class="fas fa-circle-check"></i>';
+        media.appendChild(mediaCheck);
+
+        function renderImage() {
+            var p = projects[pi];
+            img.src = p.images[ii] || '';
+            img.alt = p.name;
+            Array.prototype.forEach.call(dots.children, function (d, k) {
+                d.classList.toggle('active', k === ii);
+            });
+        }
+        function buildDots(p) {
+            dots.innerHTML = '';
+            p.images.forEach(function (_, k) {
+                var d = document.createElement('span');
+                d.className = 'sc-dot' + (k === 0 ? ' active' : '');
+                d.addEventListener('click', function () { ii = k; renderImage(); restart(); });
+                dots.appendChild(d);
+            });
+            var single = p.images.length <= 1;
+            dots.style.display = single ? 'none' : '';
+            imgPrev.style.display = single ? 'none' : '';
+            imgNext.style.display = single ? 'none' : '';
+        }
+        function renderProject() {
+            ii = 0;
+            var p = projects[pi];
+            buildDots(p);
+            renderImage();
+            nameEl.textContent = p.name;
+            descEl.textContent = p.desc;
+            if (p.badge) {
+                badge.style.display = '';
+                badge.href = p.badgeUrl || '#';
+                badge.title = p.badgeTitle || '';
+                badgeText.textContent = p.badgeText || labels.badge;
+            } else {
+                badge.style.display = 'none';
+            }
+            var pu = getPlay(p);
+            if (pu) {
+                verified.style.display = ''; verified.href = pu;
+                mediaCheck.style.display = ''; mediaCheck.href = pu;
+            } else {
+                verified.style.display = 'none';
+                mediaCheck.style.display = 'none';
+            }
+            techEl.innerHTML = '';
+            p.tech.forEach(function (t) {
+                var s = document.createElement('span');
+                s.className = 'tech-badge';
+                s.textContent = t;
+                techEl.appendChild(s);
+            });
+            linksEl.innerHTML = '';
+            p.links.forEach(function (l, k) {
+                var a = document.createElement('a');
+                a.href = l.url; a.target = '_blank'; a.rel = 'noopener';
+                a.className = 'btn btn-sm ' + (k === 0 ? 'btn-primary' : 'btn-outline-primary') + ' me-2 mb-2';
+                a.innerHTML = (l.icon ? '<i class="' + l.icon + '"></i> ' : '') + l.label;
+                linksEl.appendChild(a);
+            });
+            counter.textContent = (pi + 1) + ' / ' + projects.length;
+            Array.prototype.forEach.call(pills.children, function (b, k) {
+                b.classList.toggle('active', k === pi);
+            });
+            var active = pills.children[pi];
+            if (active && active.scrollIntoView) active.scrollIntoView({ block: 'nearest', inline: 'center' });
+            restart();
+        }
+        function nextImg() { var p = projects[pi]; ii = (ii + 1) % p.images.length; renderImage(); }
+        function prevImg() { var p = projects[pi]; ii = (ii - 1 + p.images.length) % p.images.length; renderImage(); }
+        function restart() {
+            if (timer) clearInterval(timer);
+            if (projects[pi].images.length > 1) timer = setInterval(nextImg, 4000);
+        }
+        root.querySelector('.sc-next').addEventListener('click', function () { pi = (pi + 1) % projects.length; renderProject(); });
+        root.querySelector('.sc-prev').addEventListener('click', function () { pi = (pi - 1 + projects.length) % projects.length; renderProject(); });
+        imgNext.addEventListener('click', function () { nextImg(); restart(); });
+        imgPrev.addEventListener('click', function () { prevImg(); restart(); });
+        media.addEventListener('mouseenter', function () { if (timer) clearInterval(timer); });
+        media.addEventListener('mouseleave', function () { restart(); });
+
+        renderProject();
+    }
+    document.addEventListener('DOMContentLoaded', function () {
+        if (!window.PROJECT_DATA) return;
+        var L = window.SC_LABELS || { badge: 'DB Course' };
+        initShowcase('showcase-android', window.PROJECT_DATA.android, L);
+        initShowcase('showcase-web', window.PROJECT_DATA.web, L);
+    });
+})();
