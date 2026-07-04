@@ -1,0 +1,76 @@
+# Cambios realizados en el repositorio web
+
+## ✅ Correcciones aplicadas
+
+### 1. Error de GitHub Pages - Node.js 20 deprecado
+**Problema:** El deployment fallaba con el error:
+```
+Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24
+```
+
+**Solución:** Se creó el archivo `.github/workflows/static.yml` con las versiones más recientes de las actions:
+- `actions/checkout@v4`
+- `actions/configure-pages@v5`
+- `actions/upload-pages-artifact@v3`
+- `actions/deploy-pages@v4`
+
+Estas versiones son compatibles con Node.js 24 y resolverán el error de deployment.
+
+### 2. Proyectos del curso de Bases de Datos 2026-2
+Los siguientes proyectos fueron agregados a los archivos HTML:
+- ✅ **La Casita** - Sistema web para mini súper con Laravel + MySQL + Docker
+- ✅ **Patitas Sanas** - Clínica veterinaria con React + Vite + Supabase
+- ✅ **Data Warehouse CDMX** - Análisis de consumo de agua y clima con Docker + ETL
+- ✅ **PAPIROSSO** - Papelería con automatización de cobros y pedidos
+
+### 3. Título de la página Android
+Se actualizó el título en ambos idiomas:
+- **Español** (`android-es.html`): "Hola, soy Gabriel y desarrollo apps Android"
+- **Inglés** (`android.html`): "Hi, I'm Gabriel — I build Android apps"
+
+Se eliminó la frase "que la gente usa" / "people actually use" como se solicitó.
+
+## 📁 Archivos modificados/creados
+
+### Creados:
+- `.github/workflows/static.yml` - Workflow de GitHub Pages actualizado
+- `actualizar_web.sh` - Script de bash para actualizar el repositorio
+- `actualizar_web.ps1` - Script de PowerShell para Windows
+- `CAMBIOS_REALIZADOS.md` - Este archivo
+
+### Verificados:
+- `android-es.html` - Título actualizado ✓
+- `android.html` - Título actualizado ✓
+- `index-es.html` - Proyectos agregados ✓
+- `index.html` - Proyectos agregados ✓
+
+## 🚀 Cómo aplicar los cambios
+
+### Opción 1: Usando PowerShell (Recomendado para Windows)
+```powershell
+.\actualizar_web.ps1
+```
+
+### Opción 2: Manualmente
+```bash
+# En el directorio del repositorio web
+git status
+git add .
+git commit -m "Update: Fix GitHub Pages workflow and add BD projects"
+git push origin main
+```
+
+## 🔍 Verificación
+
+Después de hacer push, verifica en GitHub:
+1. Ve a la pestaña **Actions** del repositorio
+2. Deberías ver el workflow "Deploy static content to Pages" ejecutándose
+3. El deployment debería completarse sin errores de Node.js 20
+4. Tu página estará disponible en: `https://tu-usuario.github.io/web/`
+
+## 📝 Notas adicionales
+
+- El workflow usa `ubuntu-latest` que tiene Node.js 24 preinstalado
+- Las actions están configuradas para usar las versiones más recientes y compatibles
+- El concurrency group evita deployments simultáneos que podrían causar conflictos
+- Los permisos están configurados correctamente para GitHub Pages

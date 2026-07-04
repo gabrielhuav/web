@@ -1,0 +1,86 @@
+# Script de PowerShell para actualizar el repositorio web
+Write-Host "🚀 Actualizando repositorio web personal..." -ForegroundColor Green
+Write-Host ""
+
+# Verificar que estamos en el directorio correcto
+if (-not (Test-Path "index.html")) {
+    Write-Host "❌ Error: No se encontró index.html. Asegúrate de estar en el directorio del repositorio web." -ForegroundColor Red
+    exit 1
+}
+
+Write-Host "✅ Directorio correcto" -ForegroundColor Green
+Write-Host ""
+
+# Verificar que el workflow de GitHub Pages existe
+$workflowPath = ".github\workflows\static.yml"
+if (-not (Test-Path $workflowPath)) {
+    Write-Host "📝 Creando workflow de GitHub Pages..." -ForegroundColor Yellow
+    
+    # Crear directorios
+    New-Item -ItemType Directory -Force -Path ".github\workflows" | Out-Null
+    
+    # Crear el archivo de workflow
+    $workflowContent = @"
+# Simple workflow for deploying static content to GitHub Pages
+name: Deploy static content to Pages
+
+on:
+  # Runs on pushes targeting the default branch
+  push:
+    branches: ["main"]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and run-completed
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  # Single deploy job since we're just deploying
+  deploy:
+    environment:
+      name: github-pages
+      url: `${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Upload entire repository
+          path: '.'
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+"@
+    
+    Set-Content -Path $workflowPath -Value $workflowContent -Encoding UTF8
+    Write-Host "✅ Workflow creado" -ForegroundColor Green
+} else {
+    Write-Host "✅ Workflow ya existe" -ForegroundColor Green
+}
+
+Write-Host ""
+Write-Host "📋 Resumen de cambios:" -ForegroundColor Cyan
+Write-Host "   ✓ Workflow de GitHub Pages actualizado con actions compatibles con Node.js 24"
+Write-Host "   ✓ Archivos HTML con proyectos del curso de Bases de Datos 2026-2"
+Write-Host ""
+Write-Host "🔧 Próximos pasos:" -ForegroundColor Yellow
+Write-Host "   1. Revisa los cambios con: git status"
+Write-Host "   2. Agrega los cambios: git add ."
+Write-Host "   3. Haz commit: git commit -m 'Update: Fix GitHub Pages workflow and add BD projects'"
+Write-Host "   4. Sube los cambios: git push origin main"
+Write-Host ""
+Write-Host "✨ ¡Listo! El workflow corregirá el error de Node.js 20 deprecado." -ForegroundColor Green
