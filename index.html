@@ -3,864 +3,171 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gabriel Hurtado Avilés - Computer Engineer</title>
-    
-    <!-- Meta tags for SEO -->
-    <meta name="description" content="Gabriel Hurtado Avilés - Computer Engineer specialized in software development, machine learning and data analysis. Professor at IPN ESCOM.">
-    <meta name="keywords" content="Computer Engineer, Software Development, Machine Learning, Data Analysis, IoT, MATLAB, Python, IPN Professor">
-    <meta name="author" content="Gabriel Hurtado Avilés">
-    
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- AOS Animation Library -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Gabriel Hurtado Avilés - Redirecting...</title>
+    <meta http-equiv="refresh" content="3; url=android.html">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            overflow: hidden;
+        }
+        .container {
+            text-align: center;
+            padding: 2rem;
+            max-width: 600px;
+            animation: fadeIn 1s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .logo {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+        .subtitle {
+            font-size: 1.1rem;
+            opacity: 0.8;
+            margin-bottom: 2rem;
+        }
+        .redirect-info {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            backdrop-filter: blur(10px);
+        }
+        .redirect-info p {
+            margin-bottom: 0.5rem;
+        }
+        .countdown {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #4ade80;
+        }
+        .buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.8rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, #3ddc84, #4ade80);
+            color: #000;
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(61, 220, 132, 0.3);
+        }
+        .btn-secondary {
+            background: transparent;
+            color: #fff;
+            border-color: rgba(255, 255, 255, 0.3);
+        }
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 255, 255, 0.5);
+            transform: translateY(-2px);
+        }
+        .icon {
+            font-size: 1.2rem;
+        }
+        .progress-bar {
+            width: 100%;
+            height: 4px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 2px;
+            margin-top: 1.5rem;
+            overflow: hidden;
+        }
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #3ddc84, #4ade80);
+            width: 0%;
+            animation: progress 3s linear forwards;
+        }
+        @keyframes progress {
+            from { width: 0%; }
+            to { width: 100%; }
+        }
+    </style>
+    <script>
+        let countdown = 3;
+        const countdownEl = document.getElementById('countdown');
+        
+        const interval = setInterval(() => {
+            countdown--;
+            if (countdownEl) {
+                countdownEl.textContent = countdown;
+            }
+            if (countdown <= 0) {
+                clearInterval(interval);
+            }
+        }, 1000);
+    </script>
 </head>
 <body>
-    
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-        <div class="container">
-            <a class="navbar-brand" href="#home">
-                <span class="brand-text">Gabriel Hurtado</span>
+    <div class="container">
+        <div class="logo">👨‍💻</div>
+        <h1>Gabriel Hurtado Avilés</h1>
+        <p class="subtitle">Computer Engineer · IPN ESCOM Professor</p>
+        
+        <div class="redirect-info">
+            <p>Redirecting to <strong>Android Portfolio</strong>...</p>
+            <p>in <span id="countdown" class="countdown">3</span> seconds</p>
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+        </div>
+        
+        <div class="buttons">
+            <a href="android.html" class="btn btn-primary">
+                <span class="icon">🤖</span>
+                Go to Android Portfolio
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav me-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About Me</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skills">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#experience">Experience</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#education">Education</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#publications">Publications</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#teaching">Teaching</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
-                <!-- Language Switch -->
-                <div class="language-switch">
-                    <a href="android.html" class="btn btn-outline btn-sm language-btn" title="Android-focused design">
-                        <i class="fab fa-android me-1"></i>
-                        Android
-                    </a>
-                    <a href="index-es.html" class="btn btn-outline btn-sm language-btn">
-                        <i class="fas fa-globe me-1"></i>
-                        <span class="flag-icon">🇪🇸</span>
-                        ES
-                    </a>
-                </div>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero-section">
-        <div class="hero-background">
-            <div class="hero-pattern"></div>
-        </div>
-        <div class="container">
-            <div class="row min-vh-100 align-items-center">
-                <div class="col-lg-6" data-aos="fade-right">
-                    <div class="hero-content">
-                        <div class="hero-badge">
-                            <i class="fas fa-code"></i>
-                            <span>Available for projects</span>
-                        </div>
-                        <h1 class="hero-title">
-                            Hi, I'm <span class="highlight">Gabriel Hurtado Avilés</span>
-                        </h1>
-                        <h2 class="hero-subtitle">Computer Engineer</h2>
-                        <p class="hero-description">
-                            Full Stack Developer with experience in machine learning and data analysis projects. 
-                            Professor at IPN ESCOM with active participation in research and technological development projects.
-                        </p>
-                        
-                        <div class="hero-stats">
-                            <div class="stat-item">
-                                <span class="stat-number">Master's in Computer Science</span>
-                                <span class="stat-label">In Progress, 95%</span>
-                            </div>
-                            <div class="stat-item">
-                                <span class="stat-number">C1</span>
-                                <span class="stat-label">English</span>
-                            </div>
-                        </div>
-                        
-                        <div class="hero-buttons">
-                            <a href="#projects" class="btn btn-primary">
-                                <i class="fas fa-code-branch me-2"></i>View Projects
-                            </a>
-                            <a href="#contact" class="btn btn-outline">
-                                <i class="fas fa-envelope me-2"></i>Contact
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6" data-aos="fade-left">
-                    <div class="hero-image">
-                        <div class="image-container">
-                            <img src="assets/images/gabriel-profile.png" alt="Gabriel Hurtado Avilés" class="profile-img">
-                            <div class="image-decoration"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="scroll-indicator">
-            <a href="#about" class="scroll-btn">
-                <i class="fas fa-chevron-down"></i>
+            <a href="index-fullstack.html" class="btn btn-secondary">
+                <span class="icon">💻</span>
+                View Full Stack Portfolio
             </a>
         </div>
-    </section>
+    </div>
 
-    <!-- About Section -->
-    <section id="about" class="section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center mb-5" data-aos="fade-up">
-                    <h2 class="section-title">About Me</h2>
-                    <p class="section-subtitle">Get to know my background and professional goals</p>
-                </div>
-            </div>
-            <div class="row align-items-center">
-                <div class="col-lg-6 mb-4" data-aos="fade-right">
-                    <div class="about-content">
-                        <h3 class="about-title">Who am I?</h3>
-                        <p class="about-text">
-                            I am an enthusiastic <strong>Computer Engineer</strong> with experience in university 
-                            programming projects, machine learning and data analysis. Currently working 
-                            as a professor at IPN ESCOM and pursuing a Master's in Computer Science.
-                        </p>
-                        <p class="about-text">
-                            My passion for technology has led me to specialize in software development, 
-                            IoT, and agile methodologies, always seeking to apply innovative solutions to 
-                            complex software and hardware problems.
-                        </p>
-                        
-                        <div class="objectives">
-                            <h4 class="objectives-title">Professional Goals</h4>
-                            <ul class="objectives-list">
-                                <li>
-                                    <i class="fas fa-check-circle"></i>
-                                    Apply solutions to software and hardware problems in leading organizations
-                                </li>
-                                <li>
-                                    <i class="fas fa-check-circle"></i>
-                                    Implement agile development methodologies to improve user experience
-                                </li>
-                                <li>
-                                    <i class="fas fa-check-circle"></i>
-                                    Develop software through testing, troubleshooting and coding
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 mb-4" data-aos="fade-left">
-                    <div class="info-cards">
-                        <div class="info-card">
-                            <div class="card-icon">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <div class="card-content">
-                                <h5>Location</h5>
-                                <p>Mexico City, MX</p>
-                            </div>
-                        </div>
-                        <div class="info-card">
-                            <div class="card-icon">
-                                <i class="fas fa-graduation-cap"></i>
-                            </div>
-                            <div class="card-content">
-                                <h5>Current Education</h5>
-                                <p>Master's in Computer Science</p>
-                            </div>
-                        </div>
-                        <div class="info-card">
-                            <div class="card-icon">
-                                <i class="fas fa-chalkboard-teacher"></i>
-                            </div>
-                            <div class="card-content">
-                                <h5>Current Position</h5>
-                                <p>Professor at IPN ESCOM</p>
-                            </div>
-                        </div>
-                        <div class="info-card">
-                            <div class="card-icon">
-                                <i class="fas fa-globe"></i>
-                            </div>
-                            <div class="card-content">
-                                <h5>Languages</h5>
-                                <p>Spanish (Native), English (C1), German (A1)</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center mb-5" data-aos="fade-up">
-                    <h2 class="section-title">My Projects</h2>
-                    <p class="section-subtitle">My own apps plus web projects built with my students in my Databases course at IPN ESCOM</p>
-                </div>
-            </div>
-            <div class="project-showcase" id="showcase-android">
-                <h3 class="showcase-title"><i class="fab fa-android"></i> Android Apps</h3>
-                <div class="showcase-stage">
-                    <button class="sc-arrow sc-prev" type="button" aria-label="prev"><i class="fas fa-chevron-left"></i></button>
-                    <div class="showcase-card">
-                        <div class="showcase-media">
-                            <img class="sc-img" src="" alt="" loading="lazy">
-                            <button class="sc-img-arrow sc-img-prev" type="button" aria-label="prev image"><i class="fas fa-chevron-left"></i></button>
-                            <button class="sc-img-arrow sc-img-next" type="button" aria-label="next image"><i class="fas fa-chevron-right"></i></button>
-                            <div class="sc-dots"></div>
-                        </div>
-                        <div class="showcase-info">
-                            <a class="course-badge sc-badge" href="#" target="_blank" rel="noopener"><i class="fas fa-graduation-cap"></i> <span class="sc-badge-text"></span></a>
-                            <h4 class="sc-name"></h4>
-                            <p class="sc-desc"></p>
-                            <div class="showcase-tech sc-tech"></div>
-                            <div class="showcase-links sc-links"></div>
-                        </div>
-                    </div>
-                    <button class="sc-arrow sc-next" type="button" aria-label="next"><i class="fas fa-chevron-right"></i></button>
-                </div>
-                <div class="sc-counter"></div>
-                <div class="sc-pills"></div>
-            </div>
-            <div class="project-showcase" id="showcase-web">
-                <h3 class="showcase-title"><i class="fas fa-globe"></i> Web Projects</h3>
-                <div class="showcase-stage">
-                    <button class="sc-arrow sc-prev" type="button" aria-label="prev"><i class="fas fa-chevron-left"></i></button>
-                    <div class="showcase-card">
-                        <div class="showcase-media">
-                            <img class="sc-img" src="" alt="" loading="lazy">
-                            <button class="sc-img-arrow sc-img-prev" type="button" aria-label="prev image"><i class="fas fa-chevron-left"></i></button>
-                            <button class="sc-img-arrow sc-img-next" type="button" aria-label="next image"><i class="fas fa-chevron-right"></i></button>
-                            <div class="sc-dots"></div>
-                        </div>
-                        <div class="showcase-info">
-                            <a class="course-badge sc-badge" href="#" target="_blank" rel="noopener"><i class="fas fa-graduation-cap"></i> <span class="sc-badge-text"></span></a>
-                            <h4 class="sc-name"></h4>
-                            <p class="sc-desc"></p>
-                            <div class="showcase-tech sc-tech"></div>
-                            <div class="showcase-links sc-links"></div>
-                        </div>
-                    </div>
-                    <button class="sc-arrow sc-next" type="button" aria-label="next"><i class="fas fa-chevron-right"></i></button>
-                </div>
-                <div class="sc-counter"></div>
-                <div class="sc-pills"></div>
-            </div>
-            <script>
-            window.PROJECT_DATA = {"android": [{"name": "Politecnico Open World (POW)", "desc": "Top-down open-world action RPG set across Mexico's IPN campuses (ESCOM, ENCB, and more). Explore real-inspired zones, follow a story told through pixel-art cutscenes, fight enemies in combat mode, and survive zombie-infested areas. Built for Android with on-screen gamepad controls.", "category": "android", "tech": ["Kotlin", "Android", "Game Dev", "Open World", "Pixel Art", "IPN"], "images": ["assets/images/pow/pow6.png", "assets/images/pow/pow1.png", "assets/images/pow/pow2.png", "assets/images/pow/pow3.png", "assets/images/pow/pow4.png", "assets/images/pow/pow5.png"], "badge": false, "badgeUrl": "", "links": [{"label": "Google Play", "url": "https://play.google.com/store/apps/details?id=ovh.gabrielhuav.pow", "icon": "fab fa-google-play"}, {"label": "Screenshots", "url": "https://github.com/gabrielhuav/PolitecnicoOpenWorld", "icon": "fas fa-images"}, {"label": "Code", "url": "https://github.com/gabrielhuav/PolitecnicoOpenWorld", "icon": "fab fa-github"}]}, {"name": "BitBattles (BattleNaval V2)", "desc": "Educational Android app combining classic Battleship gameplay with computer science concepts. Teaches binary systems, ASCII code, and storage units through interactive tutorials and games. Features single-player AI and Bluetooth multiplayer modes. Developed for UNAM's MADEMS program.", "category": "android", "tech": ["Kotlin", "Android", "Bluetooth", "Educational", "Game Dev", "Binary", "ASCII"], "images": ["assets/images/bitbattles/bitbattles1.png", "assets/images/bitbattles/bitbattles2.png", "assets/images/bitbattles/bitbattles3.png", "assets/images/bitbattles/bitbattles4.png", "assets/images/bitbattles/bitbattles5.png", "assets/images/bitbattles/bitbattles6.png", "assets/images/bitbattles/bitbattles7.png"], "badge": false, "badgeUrl": "", "links": [{"label": "Google Play", "url": "https://play.google.com/store/apps/details?id=ovh.gabrielhuav.battlenaval_v2", "icon": "fab fa-google-play"}, {"label": "Screenshots", "url": "https://github.com/gabrielhuav/BattleNaval_V2/tree/main/screenshots", "icon": "fas fa-images"}, {"label": "Code", "url": "https://github.com/gabrielhuav/BattleNaval_V2", "icon": "fab fa-github"}]}, {"name": "TRON 3D — Light Cycle Battle", "desc": "Tron-style light-cycle battle game where neon trails become lethal walls, with real-time Bluetooth multiplayer.", "category": "android", "tech": ["Kotlin", "LibGDX", "OpenGL ES", "Bluetooth"], "images": ["https://github.com/user-attachments/assets/55153e3e-00cd-4e39-828a-f28eefd3758a", "https://github.com/user-attachments/assets/8d87b7cc-f56f-4cdb-9a30-af94b9842510", "https://github.com/user-attachments/assets/eb533c9e-35f5-4cb0-ad47-6c98be981945"], "badge": true, "badgeUrl": "https://github.com/gabrielhuav/MobileApp-Coursework-2026-1", "badgeText": "Native Mobile Apps Course · 2026-1", "badgeTitle": "Project developed in my Native Mobile App Development course, semester 2026-1. Click for the course repository.", "links": [{"label": "Code", "url": "https://github.com/said153/Juego_LibGDX", "icon": "fab fa-github"}]}, {"name": "Buscaminas Multijugador", "desc": "Two-player Minesweeper built with Jetpack Compose and MVVM, local and Bluetooth modes, stats and saved games.", "category": "android", "tech": ["Kotlin", "Jetpack Compose", "MVVM", "Bluetooth"], "images": ["https://raw.githubusercontent.com/GarciaGarciaAramJesua/Android/main/screenshotsGGAJ/Buscaminas/Buscaminas7.jpeg", "https://raw.githubusercontent.com/GarciaGarciaAramJesua/Android/main/screenshotsGGAJ/Buscaminas/Buscaminas1.jpeg", "https://raw.githubusercontent.com/GarciaGarciaAramJesua/Android/main/screenshotsGGAJ/Buscaminas/Buscaminas2.jpeg", "https://raw.githubusercontent.com/GarciaGarciaAramJesua/Android/main/screenshotsGGAJ/Buscaminas/Buscaminas3.jpeg"], "badge": true, "badgeUrl": "https://github.com/gabrielhuav/MobileApp-Coursework-2026-1", "badgeText": "Native Mobile Apps Course · 2026-1", "badgeTitle": "Project developed in my Native Mobile App Development course, semester 2026-1. Click for the course repository.", "links": [{"label": "Code", "url": "https://github.com/PabloGranados/Juego2P", "icon": "fab fa-github"}]}, {"name": "Buscaminas Multijugador (v2)", "desc": "Local multiplayer Minesweeper variant with custom rules, time limit, autosave and dark mode.", "category": "android", "tech": ["Kotlin", "Jetpack Compose", "Android SDK"], "images": ["https://github.com/user-attachments/assets/d2c719c5-0011-4aea-b42c-fd708bc2a914", "https://github.com/user-attachments/assets/75de9504-3b0a-4c3f-a721-d41468eda1c7", "https://github.com/user-attachments/assets/9aa01ecb-4fe7-46bd-8d29-862cd8846656", "https://github.com/user-attachments/assets/ad89fcd6-f9d6-4273-87fb-57bc08eff068"], "badge": true, "badgeUrl": "https://github.com/gabrielhuav/MobileApp-Coursework-2026-1", "badgeText": "Native Mobile Apps Course · 2026-1", "badgeTitle": "Project developed in my Native Mobile App Development course, semester 2026-1. Click for the course repository.", "links": [{"label": "Code", "url": "https://github.com/cris8pm/DAMN-7CV2", "icon": "fab fa-github"}]}, {"name": "NutriScan AI", "desc": "AI food identifier classifying 62 fruit and vegetable categories with deep learning, running 100% offline on Android.", "category": "android", "tech": ["Python", "TensorFlow", "EfficientNet", "TF Lite"], "images": ["https://github.com/user-attachments/assets/fb995131-4ea8-4112-9aa9-f1d51828eb04", "https://github.com/user-attachments/assets/ee2cb4d2-408a-4fa8-9498-e786dce4418c", "https://github.com/user-attachments/assets/096b9b37-4325-4e9b-a8b3-4ccb48885ca4"], "badge": true, "badgeUrl": "https://github.com/gabrielhuav/MobileApp-Coursework-2026-1", "badgeText": "Native Mobile Apps Course · 2026-1", "badgeTitle": "Project developed in my Native Mobile App Development course, semester 2026-1. Click for the course repository.", "links": [{"label": "Code", "url": "https://github.com/KevinDz11/Identificador-de-frutas-con-ML", "icon": "fab fa-github"}, {"label": "Tutorial", "url": "https://youtu.be/5GjMJrkjf7g", "icon": "fab fa-youtube"}, {"label": "Slides", "url": "https://www.canva.com/design/DAG9lyLCIic/1rKlR4YnadxxEYtAmHNE2g/edit", "icon": "fas fa-file-lines"}]}, {"name": "Chess Multiplayer", "desc": "Lightweight Android chess with touch UI, searchable match history and performance stats.", "category": "android", "tech": ["Kotlin", "Android SDK", "Material Design", "SQLite"], "images": ["https://raw.githubusercontent.com/IrminDev/Chess-Mobile/refs/heads/master/assets/main.jpg", "https://raw.githubusercontent.com/IrminDev/Chess-Mobile/refs/heads/master/assets/match.jpg", "https://raw.githubusercontent.com/IrminDev/Chess-Mobile/refs/heads/master/assets/checkmate.jpg", "https://raw.githubusercontent.com/IrminDev/Chess-Mobile/refs/heads/master/assets/statistics.jpg"], "badge": true, "badgeUrl": "https://github.com/gabrielhuav/MobileApp-Coursework-2026-1", "badgeText": "Native Mobile Apps Course · 2026-1", "badgeTitle": "Project developed in my Native Mobile App Development course, semester 2026-1. Click for the course repository.", "links": [{"label": "Code", "url": "https://github.com/IrminDev/Chess-Mobile", "icon": "fab fa-github"}]}, {"name": "ShareCrypt", "desc": "App to share files and secrets securely via end-to-end encryption with transfer verification.", "category": "android", "tech": ["Kotlin", "Cryptography", "Bluetooth", "WiFi Direct"], "images": ["https://raw.githubusercontent.com/IrminDev/ShareCrypt/refs/heads/main/assets/menu.jpg", "https://raw.githubusercontent.com/IrminDev/ShareCrypt/refs/heads/main/assets/files.jpg", "https://raw.githubusercontent.com/IrminDev/ShareCrypt/refs/heads/main/assets/secrets.jpg", "https://raw.githubusercontent.com/IrminDev/ShareCrypt/refs/heads/main/assets/key_man.jpg"], "badge": true, "badgeUrl": "https://github.com/gabrielhuav/MobileApp-Coursework-2026-1", "badgeText": "Native Mobile Apps Course · 2026-1", "badgeTitle": "Project developed in my Native Mobile App Development course, semester 2026-1. Click for the course repository.", "links": [{"label": "Code", "url": "https://github.com/IrminDev/ShareCrypt", "icon": "fab fa-github"}]}, {"name": "Explorador de Archivos", "desc": "File manager with internal/external storage navigation, CRUD operations and IPN/ESCOM themes.", "category": "android", "tech": ["Kotlin", "Material Design 3"], "images": ["https://github.com/user-attachments/assets/14f39f28-8a89-4cc7-a06e-944baecd2960", "https://github.com/user-attachments/assets/07833bde-68c2-439b-a2b8-d0c0fe5da5a3", "https://github.com/user-attachments/assets/4811e457-995d-48f4-82a1-b374fab71c4e", "https://github.com/user-attachments/assets/0fa78a21-718d-4e5d-addb-7590c9cac8f3"], "badge": true, "badgeUrl": "https://github.com/gabrielhuav/MobileApp-Coursework-2026-1", "badgeText": "Native Mobile Apps Course · 2026-1", "badgeTitle": "Project developed in my Native Mobile App Development course, semester 2026-1. Click for the course repository.", "links": [{"label": "Code", "url": "https://github.com/DiFlyy/Practica_3", "icon": "fab fa-github"}]}, {"name": "Explorador de Archivos (v2)", "desc": "Storage manager with directory navigation, Storage Access Framework and an optimized RecyclerView.", "category": "android", "tech": ["Kotlin", "Coroutines", "SAF", "RecyclerView"], "images": ["https://github.com/user-attachments/assets/0411c58f-e223-42d4-87e2-115519bbe137", "https://github.com/user-attachments/assets/aaf74c4e-2f12-4fc4-91e0-96522c3ed815", "https://github.com/user-attachments/assets/c8c37aa3-3aa5-435a-855b-c7e146f2ecf9"], "badge": true, "badgeUrl": "https://github.com/gabrielhuav/MobileApp-Coursework-2026-1", "badgeText": "Native Mobile Apps Course · 2026-1", "badgeTitle": "Project developed in my Native Mobile App Development course, semester 2026-1. Click for the course repository.", "links": [{"label": "Code", "url": "https://github.com/TonyRV8/Pr-ctica-3-Aplicaciones-nativas", "icon": "fab fa-github"}]}, {"name": "Memorama Colorido", "desc": "Memory game with solo, local versus and Bluetooth modes, with particle effects in LibGDX.", "category": "android", "tech": ["Kotlin", "LibGDX", "OpenGL ES", "Bluetooth"], "images": ["https://github.com/user-attachments/assets/7248e79d-bfe1-4889-b6c8-f180cba9e4ca", "https://github.com/user-attachments/assets/b223774d-0ca3-464f-8df1-e52e70c0019a"], "badge": true, "badgeUrl": "https://github.com/gabrielhuav/MobileApp-Coursework-2026-1", "badgeText": "Native Mobile Apps Course · 2026-1", "badgeTitle": "Project developed in my Native Mobile App Development course, semester 2026-1. Click for the course repository.", "links": [{"label": "Code", "url": "https://github.com/Gabriel024226/juegopara2jugadoresgratis", "icon": "fab fa-github"}]}, {"name": "Memorama (Local / IA / Bluetooth)", "desc": "Memory game with local, vs AI and Bluetooth modes, plus saved-match replays stored in XML.", "category": "android", "tech": ["Kotlin", "Jetpack Compose", "Material 3", "Bluetooth"], "images": ["https://github.com/SoyLeth/Desarrollo_de_aplicaciones_moviles_nativas/blob/master/Juego%20Memorama/images/img1.jpg?raw=true", "https://github.com/SoyLeth/Desarrollo_de_aplicaciones_moviles_nativas/raw/master/Juego%20Memorama/images/img2.jpg", "https://github.com/SoyLeth/Desarrollo_de_aplicaciones_moviles_nativas/raw/master/Juego%20Memorama/images/img5.jpg", "https://github.com/SoyLeth/Desarrollo_de_aplicaciones_moviles_nativas/raw/master/Juego%20Memorama/images/img6.jpg"], "badge": true, "badgeUrl": "https://github.com/gabrielhuav/MobileApp-Coursework-2026-1", "badgeText": "Native Mobile Apps Course · 2026-1", "badgeTitle": "Project developed in my Native Mobile App Development course, semester 2026-1. Click for the course repository.", "links": [{"label": "Code", "url": "https://github.com/SoyLeth/Desarrollo_de_aplicaciones_moviles_nativas", "icon": "fab fa-github"}]}, {"name": "Conecta 4", "desc": "Connect 4 with local, vs AI and Bluetooth multiplayer modes, plus match history.", "category": "android", "tech": ["Kotlin", "Android SDK", "Bluetooth"], "images": ["https://github.com/user-attachments/assets/0b08ae78-b96b-46a4-bbde-f8882aaeda59", "https://github.com/user-attachments/assets/fe4f2ec6-978b-4110-a59f-3a9dfcfa93cf", "https://github.com/user-attachments/assets/c44fe8d6-7f86-4b64-ae00-d1b1bb74387a", "https://github.com/user-attachments/assets/5d2e7c5c-3118-46d9-b082-6ec5fd46ceba"], "badge": true, "badgeUrl": "https://github.com/gabrielhuav/MobileApp-Coursework-2026-1", "badgeText": "Native Mobile Apps Course · 2026-1", "badgeTitle": "Project developed in my Native Mobile App Development course, semester 2026-1. Click for the course repository.", "links": [{"label": "Code", "url": "https://github.com/RuloMtz93/Raul_Martinez_Moviles_7CV2-2025", "icon": "fab fa-github"}]}, {"name": "Blackjack (21)", "desc": "Classic Blackjack for two players vs the house, Bluetooth multiplayer and match history.", "category": "android", "tech": ["Kotlin", "Bluetooth"], "images": ["https://github.com/user-attachments/assets/066090a5-69e5-4c8f-b8e1-6aa04ff91c83", "https://github.com/user-attachments/assets/9b348486-b3f8-4883-b5f2-a59b8fcfa4b2", "https://github.com/user-attachments/assets/77e6e80e-4637-4490-bd94-2170a476263c", "https://github.com/user-attachments/assets/25b9673e-bee8-4ebd-8182-ba21076247b7"], "badge": true, "badgeUrl": "https://github.com/gabrielhuav/MobileApp-Coursework-2026-1", "badgeText": "Native Mobile Apps Course · 2026-1", "badgeTitle": "Project developed in my Native Mobile App Development course, semester 2026-1. Click for the course repository.", "links": [{"label": "Code", "url": "https://github.com/Brandonttt/Juego", "icon": "fab fa-github"}]}, {"name": "Tiro al Blanco", "desc": "Local multiplayer game where two players shoot marbles at a target, controlling aim and power by touch.", "category": "android", "tech": ["Kotlin", "Touch", "JSON"], "images": ["https://github.com/user-attachments/assets/93a6597d-c718-4f0c-b072-7773f6b8f8d6", "https://github.com/user-attachments/assets/e502eb10-9c6d-4fa3-a015-b67bf42dc09c", "https://github.com/user-attachments/assets/01bfd00e-d43b-4df3-a2a3-139b7d76a51d"], "badge": true, "badgeUrl": "https://github.com/gabrielhuav/MobileApp-Coursework-2026-1", "badgeText": "Native Mobile Apps Course · 2026-1", "badgeTitle": "Project developed in my Native Mobile App Development course, semester 2026-1. Click for the course repository.", "links": [{"label": "Code", "url": "https://github.com/JaredFs123456/Multijugador", "icon": "fab fa-github"}]}, {"name": "Pokédex Flutter", "desc": "Full Flutter Pokédex consuming PokeAPI, with Firebase auth, persistent favorites and local notifications.", "category": "android", "tech": ["Flutter", "Dart", "Riverpod", "Firebase"], "images": ["https://github.com/user-attachments/assets/22838c32-48bd-4c5a-be91-a519ca07a9ba", "https://github.com/user-attachments/assets/e98855ef-0906-4d44-b97b-e815ed4dce2d", "https://github.com/user-attachments/assets/15111fa0-9f90-4847-bd8f-124345a6dff7"], "badge": true, "badgeUrl": "https://github.com/gabrielhuav/MobileApp-Coursework-2026-1", "badgeText": "Native Mobile Apps Course · 2026-1", "badgeTitle": "Project developed in my Native Mobile App Development course, semester 2026-1. Click for the course repository.", "links": [{"label": "Code", "url": "https://github.com/Vanwsssa/Pokedex", "icon": "fab fa-github"}]}, {"name": "Yu-Gi-Oh! Card Database", "desc": "Yu-Gi-Oh! card lookup app with MVVM, Retrofit, Coroutines and Room for local persistence.", "category": "android", "tech": ["Kotlin", "MVVM", "Retrofit", "Room"], "images": ["https://user-images.githubusercontent.com/115143423/202418155-bcb8288e-8656-47f1-b4f6-0a1e8a698313.jpg", "https://user-images.githubusercontent.com/115143423/202418163-99979532-7e1e-4aef-b6da-85835960f53b.jpg", "https://user-images.githubusercontent.com/115143423/202420839-5b6591b2-951a-491d-8a96-f3b58bf420a8.jpg"], "badge": true, "badgeUrl": "https://github.com/gabrielhuav/MobileApp-Coursework-2026-1", "badgeText": "Native Mobile Apps Course · 2026-1", "badgeTitle": "Project developed in my Native Mobile App Development course, semester 2026-1. Click for the course repository.", "links": [{"label": "Code", "url": "https://github.com/diegoxze35/Yu-Gi-Oh-Card-database-app", "icon": "fab fa-github"}]}, {"name": "TVMaze API App", "desc": "App with custom and public (TVMaze) REST APIs, JWT auth, offline/online sync and an admin panel.", "category": "android", "tech": ["Kotlin", "Retrofit", "Room", "Node.js"], "images": ["https://raw.githubusercontent.com/LuisContla/DesarrolloAppsMoviles/main/Pr%C3%A1ctica%205/Capturas/Vista1.jpg", "https://raw.githubusercontent.com/LuisContla/DesarrolloAppsMoviles/main/Pr%C3%A1ctica%205/Capturas/Vista2.jpg", "https://raw.githubusercontent.com/LuisContla/DesarrolloAppsMoviles/main/Pr%C3%A1ctica%205/Capturas/Vista3.jpg", "https://raw.githubusercontent.com/LuisContla/DesarrolloAppsMoviles/main/Pr%C3%A1ctica%205/Capturas/Vista4.jpg"], "badge": true, "badgeUrl": "https://github.com/gabrielhuav/MobileApp-Coursework-2026-1", "badgeText": "Native Mobile Apps Course · 2026-1", "badgeTitle": "Project developed in my Native Mobile App Development course, semester 2026-1. Click for the course repository.", "links": [{"label": "Code", "url": "https://github.com/LuisContla/DesarrolloAppsMoviles/tree/main/Pr%C3%A1ctica%205", "icon": "fab fa-github"}]}, {"name": "CineVerse", "desc": "Series search and recommender with Jetpack Compose, Firebase-synced favorites and the TVMaze API.", "category": "android", "tech": ["Kotlin", "Jetpack Compose", "MVVM", "Firebase"], "images": ["https://github.com/RUME05/practica5-Consulta_Basesdedatos_viaAPIs/blob/master/capsP5/1.jpg?raw=true", "https://github.com/RUME05/practica5-Consulta_Basesdedatos_viaAPIs/blob/master/capsP5/2.jpg?raw=true", "https://github.com/RUME05/practica5-Consulta_Basesdedatos_viaAPIs/blob/master/capsP5/3.jpg?raw=true"], "badge": true, "badgeUrl": "https://github.com/gabrielhuav/MobileApp-Coursework-2026-1", "badgeText": "Native Mobile Apps Course · 2026-1", "badgeTitle": "Project developed in my Native Mobile App Development course, semester 2026-1. Click for the course repository.", "links": [{"label": "Code", "url": "https://github.com/RUME05/practica5-Consulta_Basesdedatos_viaAPIs", "icon": "fab fa-github"}]}, {"name": "Rastreador de Ubicación IPN", "desc": "Real-time GPS tracking with OpenStreetMap, a foreground service, configurable intervals and JSON history.", "category": "android", "tech": ["Kotlin", "osmdroid", "Foreground Service", "JSON"], "images": ["https://github.com/Alejandro261102/ExamenMoviles/blob/main/Imagenes/Intervalo_10s.jpeg?raw=true", "https://github.com/Alejandro261102/ExamenMoviles/blob/main/Imagenes/Modo_obscuro.jpeg?raw=true", "https://github.com/Alejandro261102/ExamenMoviles/blob/main/Imagenes/Modo_azul.jpeg?raw=true", "https://github.com/Alejandro261102/ExamenMoviles/blob/main/Imagenes/Historial.jpeg?raw=true"], "badge": true, "badgeUrl": "https://github.com/gabrielhuav/MobileApp-Coursework-2026-1", "badgeText": "Native Mobile Apps Course · 2026-1", "badgeTitle": "Project developed in my Native Mobile App Development course, semester 2026-1. Click for the course repository.", "links": [{"label": "Code", "url": "https://github.com/Alejandro261102/ExamenMoviles", "icon": "fab fa-github"}]}, {"name": "Rastreo GPS", "desc": "GPS tracking app with a visual history, real-time accuracy meter and JSON data management.", "category": "android", "tech": ["Kotlin", "OpenStreetMap", "JSON"], "images": ["https://github.com/user-attachments/assets/1969b206-834c-4775-89aa-3da1249571f5", "https://github.com/user-attachments/assets/5b50ba3f-4efd-4523-ab9b-a820ec8af12b", "https://github.com/user-attachments/assets/02c5a9b4-d4c9-48b6-a3c4-3427bc187c65", "https://github.com/user-attachments/assets/4eb24844-e92a-4ddd-b335-b04fa480c890"], "badge": true, "badgeUrl": "https://github.com/gabrielhuav/MobileApp-Coursework-2026-1", "badgeText": "Native Mobile Apps Course · 2026-1", "badgeTitle": "Project developed in my Native Mobile App Development course, semester 2026-1. Click for the course repository.", "links": [{"label": "Code", "url": "https://github.com/gael-marquez/Examen_Moviles", "icon": "fab fa-github"}]}, {"name": "Visor Ciudadano", "desc": "Civic-participation app with geolocated reports, a heat map and a risk traffic-light by report density.", "category": "android", "tech": ["Kotlin", "Jetpack Compose", "Google Maps", "Firebase"], "images": ["https://github.com/user-attachments/assets/f117fc10-9993-4d78-9734-92efdd320e7a", "https://github.com/user-attachments/assets/efffefba-1b28-41bb-a4c6-78605ea8539f", "https://github.com/user-attachments/assets/4be6c2d1-b6e8-4354-96f3-81ac749fa96f", "https://github.com/user-attachments/assets/bbc68c46-10fe-49eb-b98d-8387c5e30980"], "badge": true, "badgeUrl": "https://github.com/gabrielhuav/MobileApp-Coursework-2026-1", "badgeText": "Native Mobile Apps Course · 2026-1", "badgeTitle": "Project developed in my Native Mobile App Development course, semester 2026-1. Click for the course repository.", "links": [{"label": "Code", "url": "https://github.com/LynxBard/VisorCiudadano", "icon": "fab fa-github"}]}, {"name": "Tracklim", "desc": "Race-circuit explorer with Google Maps SDK, real track layouts and a winners history.", "category": "android", "tech": ["Kotlin", "Google Maps SDK"], "images": ["https://github.com/user-attachments/assets/c930ea61-8954-40a2-9443-c652405da3d5", "https://github.com/user-attachments/assets/4819534f-0af7-4c01-9b1b-e599500df462", "https://github.com/user-attachments/assets/6a1d59d5-1fbf-4919-ab4c-6063463c3a99", "https://github.com/user-attachments/assets/955d667b-d2b0-4d99-8245-c0248f962228"], "badge": true, "badgeUrl": "https://github.com/gabrielhuav/MobileApp-Coursework-2026-1", "badgeText": "Native Mobile Apps Course · 2026-1", "badgeTitle": "Project developed in my Native Mobile App Development course, semester 2026-1. Click for the course repository.", "links": [{"label": "Code", "url": "https://github.com/DLaVegaA/Practica2_tareas2y3", "icon": "fab fa-github"}]}, {"name": "Cámara y Micrófono", "desc": "Native app to capture photos with CameraX (live filters) and record audio, with a built-in media gallery.", "category": "android", "tech": ["Kotlin", "CameraX"], "images": ["https://github.com/user-attachments/assets/aa0ac2de-282a-49cc-b2ad-148a700fc01f", "https://github.com/user-attachments/assets/3e56d131-7911-4898-8229-5a92921267e3", "https://github.com/user-attachments/assets/f5a544c8-52e9-427f-9817-b8c01be421c8", "https://github.com/user-attachments/assets/cdc0a05b-d9a0-4c3d-96b4-f0e8834fea0f"], "badge": true, "badgeUrl": "https://github.com/gabrielhuav/MobileApp-Coursework-2026-1", "badgeText": "Native Mobile Apps Course · 2026-1", "badgeTitle": "Project developed in my Native Mobile App Development course, semester 2026-1. Click for the course repository.", "links": [{"label": "Code", "url": "https://github.com/said153/Pr-ctica-3-Aplicaciones-nativas", "icon": "fab fa-github"}]}, {"name": "JoJo's Interactive App", "desc": "Interactive app with info on JoJo's Bizarre Adventure characters, their powers and stats.", "category": "android", "tech": ["Kotlin", "Material Design"], "images": ["https://github.com/user-attachments/assets/18521dc9-afd7-4633-8e2f-f36ba6d957c3", "https://github.com/user-attachments/assets/886f8365-fe00-4f5c-9964-b476cec515f1", "https://github.com/user-attachments/assets/00336ff7-5dc0-42b4-8060-67539453a51d"], "badge": true, "badgeUrl": "https://github.com/gabrielhuav/MobileApp-Coursework-2026-1", "badgeText": "Native Mobile Apps Course · 2026-1", "badgeTitle": "Project developed in my Native Mobile App Development course, semester 2026-1. Click for the course repository.", "links": [{"label": "Code", "url": "https://github.com/leay21/Tarea2", "icon": "fab fa-github"}]}, {"name": "App de Salud Dental", "desc": "Educational dental-health app with fragment navigation, embedded videos and SharedPreferences persistence.", "category": "android", "tech": ["Kotlin", "Fragments", "SharedPreferences"], "images": ["https://github.com/user-attachments/assets/757cc192-eee9-457f-9a1a-a7e7a270c25a", "https://github.com/user-attachments/assets/6fb90cf4-4a1f-4342-a86d-8a4ad1e5d04c", "https://github.com/user-attachments/assets/fd05142d-7cae-453d-80b9-d9470e82a5c9", "https://github.com/user-attachments/assets/e812ec6e-a03e-454f-9669-2494de90e8b3"], "badge": true, "badgeUrl": "https://github.com/gabrielhuav/MobileApp-Coursework-2026-1", "badgeText": "Native Mobile Apps Course · 2026-1", "badgeTitle": "Project developed in my Native Mobile App Development course, semester 2026-1. Click for the course repository.", "links": [{"label": "Code", "url": "https://github.com/Vanwsssa/Practica2", "icon": "fab fa-github"}]}, {"name": "Viaje Prehistórico", "desc": "Interactive app to explore prehistoric eras, geological periods and creatures, with Fragments and ViewPager2.", "category": "android", "tech": ["Kotlin", "Material 3", "ViewPager2"], "images": ["https://github.com/PabloGranados/Moviles/raw/main/screenshots/main_light.png", "https://github.com/PabloGranados/Moviles/raw/main/screenshots/periods_light.png", "https://github.com/PabloGranados/Moviles/raw/main/screenshots/creatures_light.png"], "badge": true, "badgeUrl": "https://github.com/gabrielhuav/MobileApp-Coursework-2026-1", "badgeText": "Native Mobile Apps Course · 2026-1", "badgeTitle": "Project developed in my Native Mobile App Development course, semester 2026-1. Click for the course repository.", "links": [{"label": "Code", "url": "https://github.com/PabloGranados/Moviles", "icon": "fab fa-github"}]}, {"name": "New York City Explorer", "desc": "Interactive NYC travel guide with a hotspot map and detail screens for iconic landmarks.", "category": "android", "tech": ["Kotlin", "Android SDK"], "images": ["https://raw.githubusercontent.com/asg28/Tarea2_Dise-o_de_una_Aventura_Interactiva/main/Inicio.png", "https://raw.githubusercontent.com/asg28/Tarea2_Dise-o_de_una_Aventura_Interactiva/main/Central_Park.png", "https://raw.githubusercontent.com/asg28/Tarea2_Dise-o_de_una_Aventura_Interactiva/main/Empire_State.png", "https://raw.githubusercontent.com/asg28/Tarea2_Dise-o_de_una_Aventura_Interactiva/main/EstatuaL.png"], "badge": true, "badgeUrl": "https://github.com/gabrielhuav/MobileApp-Coursework-2026-1", "badgeText": "Native Mobile Apps Course · 2026-1", "badgeTitle": "Project developed in my Native Mobile App Development course, semester 2026-1. Click for the course repository.", "links": [{"label": "Code", "url": "https://github.com/asg28/Tarea-2_Practica-2_Repositorio_Actualizado", "icon": "fab fa-github"}]}, {"name": "Aventura Interactiva", "desc": "Kotlin app to explore countries of the Americas with maps, landmarks, descriptions and videos.", "category": "android", "tech": ["Kotlin", "Activities", "Fragments"], "images": ["https://raw.githubusercontent.com/Alfx17/Aventura_Interactiva/main/fondo/America.jpeg", "https://raw.githubusercontent.com/Alfx17/Aventura_Interactiva/main/fondo/Mexico.jpeg", "https://raw.githubusercontent.com/Alfx17/Aventura_Interactiva/main/fondo/Vallarta.jpeg"], "badge": true, "badgeUrl": "https://github.com/gabrielhuav/MobileApp-Coursework-2026-1", "badgeText": "Native Mobile Apps Course · 2026-1", "badgeTitle": "Project developed in my Native Mobile App Development course, semester 2026-1. Click for the course repository.", "links": [{"label": "Code", "url": "https://github.com/Alfx17/Aventura_Interactiva", "icon": "fab fa-github"}]}, {"name": "Garambullo (Flutter)", "desc": "Flutter educational experience about the garambullo (a Mexican cactus) with navigable, interactive screens.", "category": "android", "tech": ["Flutter", "Dart", "SharedPreferences"], "images": ["https://raw.githubusercontent.com/AkiseF/AplicacionesMovilesNativas/main/Practica2/practica_2/assets/images/capturas_ejecucion/modo_oscuro/IMG-20251006-WA0021.jpg", "https://raw.githubusercontent.com/AkiseF/AplicacionesMovilesNativas/main/Practica2/practica_2/assets/images/capturas_ejecucion/modo_oscuro/IMG-20251006-WA0039.jpg", "https://raw.githubusercontent.com/AkiseF/AplicacionesMovilesNativas/main/Practica2/practica_2/assets/images/capturas_ejecucion/modo_claro/IMG-20251006-WA0030.jpg", "https://raw.githubusercontent.com/AkiseF/AplicacionesMovilesNativas/main/Practica2/practica_2/assets/images/capturas_ejecucion/modo_claro/IMG-20251006-WA0034.jpg"], "badge": true, "badgeUrl": "https://github.com/gabrielhuav/MobileApp-Coursework-2026-1", "badgeText": "Native Mobile Apps Course · 2026-1", "badgeTitle": "Project developed in my Native Mobile App Development course, semester 2026-1. Click for the course repository.", "links": [{"label": "Code", "url": "https://github.com/AkiseF/AplicacionesMovilesNativas/tree/main/Practica2", "icon": "fab fa-github"}]}, {"name": "GameVerse", "desc": "App with hierarchical video-game navigation (Genres → Franchises → Games) and persistent light/dark theme.", "category": "android", "tech": ["Kotlin", "Material Design", "ViewBinding"], "images": ["https://raw.githubusercontent.com/LuisContla/DesarrolloAppsMoviles/main/Pr%C3%A1ctica%202/Capturas/MainOscuro.png", "https://raw.githubusercontent.com/LuisContla/DesarrolloAppsMoviles/main/Pr%C3%A1ctica%202/Capturas/MainClaro.png", "https://raw.githubusercontent.com/LuisContla/DesarrolloAppsMoviles/main/Pr%C3%A1ctica%202/Capturas/FranchiseOscuro.png", "https://raw.githubusercontent.com/LuisContla/DesarrolloAppsMoviles/main/Pr%C3%A1ctica%202/Capturas/FranchiseClaro.png"], "badge": true, "badgeUrl": "https://github.com/gabrielhuav/MobileApp-Coursework-2026-1", "badgeText": "Native Mobile Apps Course · 2026-1", "badgeTitle": "Project developed in my Native Mobile App Development course, semester 2026-1. Click for the course repository.", "links": [{"label": "Code", "url": "https://github.com/LuisContla/DesarrolloAppsMoviles/tree/main/Pr%C3%A1ctica%202", "icon": "fab fa-github"}]}, {"name": "Cyberdream", "desc": "Cyberpunk urban exploration across three levels (City → Districts → Buildings) with neon aesthetics and animations.", "category": "android", "tech": ["Kotlin", "Material Design 3"], "images": ["https://github.com/user-attachments/assets/fae6f389-6091-4261-b3c2-ab61037aebbf", "https://github.com/user-attachments/assets/a1d22908-b1df-4a65-bb42-fd580ae9b939", "https://github.com/user-attachments/assets/ea3a8ad6-97a7-4c99-84c2-bbf6121959ac", "https://github.com/user-attachments/assets/64d8615e-eef4-40af-a320-a6c0fa3d88f8"], "badge": true, "badgeUrl": "https://github.com/gabrielhuav/MobileApp-Coursework-2026-1", "badgeText": "Native Mobile Apps Course · 2026-1", "badgeTitle": "Project developed in my Native Mobile App Development course, semester 2026-1. Click for the course repository.", "links": [{"label": "Code", "url": "https://github.com/archykuroko/AplicacionesMoviles", "icon": "fab fa-github"}]}, {"name": "JYP Universe", "desc": "JYP Entertainment-themed app showcasing K-POP groups with hierarchical navigation and flip cards.", "category": "android", "tech": ["Kotlin", "Material 3", "ViewPager2"], "images": ["https://github.com/SoyLeth/Desarrollo_de_aplicaciones_moviles_nativas/raw/master/Tarea2_Practica2/images/hq1.jpg", "https://github.com/SoyLeth/Desarrollo_de_aplicaciones_moviles_nativas/raw/master/Tarea2_Practica2/images/grupos1.jpg", "https://github.com/SoyLeth/Desarrollo_de_aplicaciones_moviles_nativas/raw/master/Tarea2_Practica2/images/twice1.jpg", "https://github.com/SoyLeth/Desarrollo_de_aplicaciones_moviles_nativas/raw/master/Tarea2_Practica2/images/skz1.jpg"], "badge": true, "badgeUrl": "https://github.com/gabrielhuav/MobileApp-Coursework-2026-1", "badgeText": "Native Mobile Apps Course · 2026-1", "badgeTitle": "Project developed in my Native Mobile App Development course, semester 2026-1. Click for the course repository.", "links": [{"label": "Code", "url": "https://github.com/SoyLeth/Desarrollo_de_aplicaciones_moviles_nativas", "icon": "fab fa-github"}]}], "web": [{"name": "Booksnexus", "desc": "Social network for book lovers where users register, post reviews and opinions, follow others and discover new reads.", "category": "web", "tech": ["Node.js", "Express", "PostgreSQL", "Supabase"], "images": ["https://github.com/user-attachments/assets/9f8b8d01-2880-4773-ac7e-0f6ee0bae7c8", "https://github.com/user-attachments/assets/6e9c99e6-8039-409f-a336-74028e68fe78", "https://github.com/user-attachments/assets/1b93c8fe-d090-4b01-98a9-a35d4af7d36e"], "badge": true, "badgeUrl": "https://github.com/gabrielhuav/DB-Coursework-2026-2", "links": [{"label": "Demo", "url": "https://diegocstln.github.io/mi-proyecto-bd/", "icon": "fas fa-play"}, {"label": "Code", "url": "https://github.com/Diegocstln/mi-proyecto-bd", "icon": "fab fa-github"}], "badgeText": "Databases Course · 2026-2", "badgeTitle": "Project developed in my Databases course (2026-2). Click for the course repository."}, {"name": "DestinyCafe", "desc": "Management system for an artisanal coffee shop: clients, products, inventory, suppliers, sales and staff scheduling.", "category": "web", "tech": ["JavaScript", "PostgreSQL", "Supabase"], "images": ["https://github.com/PerlaSantos/DestinyCafe/blob/960a0a8029eea604e10949a234bdaa3712193b60/Principal.png?raw=true", "https://github.com/PerlaSantos/DestinyCafe/blob/960a0a8029eea604e10949a234bdaa3712193b60/Areas.png?raw=true", "https://github.com/PerlaSantos/DestinyCafe/blob/960a0a8029eea604e10949a234bdaa3712193b60/Inventario.png?raw=true", "https://github.com/PerlaSantos/DestinyCafe/blob/960a0a8029eea604e10949a234bdaa3712193b60/Ventas.png?raw=true"], "badge": true, "badgeUrl": "https://github.com/gabrielhuav/DB-Coursework-2026-2", "links": [{"label": "Demo", "url": "https://perlasantos.github.io/DestinyCafe/", "icon": "fas fa-play"}, {"label": "Code", "url": "https://github.com/PerlaSantos/DestinyCafe", "icon": "fab fa-github"}], "badgeText": "Databases Course · 2026-2", "badgeTitle": "Project developed in my Databases course (2026-2). Click for the course repository."}, {"name": "Patitas Felices", "desc": "Animal-shelter platform with adoption requests, per-animal medical history and real-time stats, with admin, vet and volunteer roles.", "category": "web", "tech": ["Node.js", "Express", "PostgreSQL", "Bootstrap"], "images": ["https://github.com/user-attachments/assets/c04a0b8e-cdf1-4da3-b722-79644c8aad3c", "https://github.com/user-attachments/assets/474219f5-2c2c-4ad9-83b8-eed15b6ec1d0", "https://github.com/user-attachments/assets/352f3878-9982-435f-8235-43ea6d21d938", "https://github.com/user-attachments/assets/a7156165-26d1-42fd-be91-c1a9f80dbd53"], "badge": true, "badgeUrl": "https://github.com/gabrielhuav/DB-Coursework-2026-2", "links": [{"label": "Demo", "url": "https://jokerkorio.github.io/patitas-api/", "icon": "fas fa-play"}, {"label": "Code", "url": "https://github.com/JOKERKORIO/patitas-api", "icon": "fab fa-github"}], "badgeText": "Databases Course · 2026-2", "badgeTitle": "Project developed in my Databases course (2026-2). Click for the course repository."}, {"name": "Los Consentidos", "desc": "Restaurant management with point-of-sale, menu, inventory, staff, a live table map and QR-code reviews.", "category": "web", "tech": ["JavaScript", "Supabase", "PostgreSQL", "QR API"], "images": ["https://github.com/aeiou520814-del/abc/blob/main/imagenes/1.png?raw=true", "https://github.com/aeiou520814-del/abc/blob/main/imagenes/2.png?raw=true", "https://github.com/aeiou520814-del/abc/blob/main/imagenes/3.png?raw=true", "https://github.com/aeiou520814-del/abc/blob/main/imagenes/4.png?raw=true"], "badge": true, "badgeUrl": "https://github.com/gabrielhuav/DB-Coursework-2026-2", "links": [{"label": "Demo", "url": "https://aeiou520814-del.github.io/abc/", "icon": "fas fa-play"}, {"label": "Code", "url": "https://github.com/aeiou520814-del/abc", "icon": "fab fa-github"}], "badgeText": "Databases Course · 2026-2", "badgeTitle": "Project developed in my Databases course (2026-2). Click for the course repository."}, {"name": "Obras Públicas Temascaltepec", "desc": "Municipal public-works management covering the full project life cycle, with role-based panels for director, planner, supervisor and secretariat.", "category": "web", "tech": ["Flask", "Python", "PostgreSQL", "JavaScript"], "images": ["https://github.com/user-attachments/assets/a7211f15-710e-4fb1-9d7c-1a958ef3ef00", "https://github.com/user-attachments/assets/b5bb340e-b40b-4dfd-897b-470650f917bb", "https://github.com/user-attachments/assets/23371366-a686-4380-b19d-f824d35d0318", "https://github.com/user-attachments/assets/e8666f39-f4c0-4145-a052-ae1e20134768"], "badge": true, "badgeUrl": "https://github.com/gabrielhuav/DB-Coursework-2026-2", "links": [{"label": "Demo", "url": "https://urigc.github.io/Obras_publicas/", "icon": "fas fa-play"}, {"label": "Code", "url": "https://github.com/Urigc/Obras_publicas", "icon": "fab fa-github"}], "badgeText": "Databases Course · 2026-2", "badgeTitle": "Project developed in my Databases course (2026-2). Click for the course repository."}, {"name": "VinylVibes", "desc": "Vinyl-record store with Discogs, Last.fm and YouTube integrations, JWT auth, Redis caching and an admin panel.", "category": "web", "tech": ["Node.js", "Prisma", "PostgreSQL", "Redis", "JWT"], "images": ["https://github.com/user-attachments/assets/b8a28bde-7a63-4fb5-ab29-dae045f5c318", "https://github.com/user-attachments/assets/c698edfe-8f98-4268-9bab-666cf72c7caa", "https://github.com/user-attachments/assets/8769e360-5673-4111-8041-c7813d667014", "https://github.com/user-attachments/assets/8eef01ca-0473-410e-91cd-0c3c221b5f8a"], "badge": true, "badgeUrl": "https://github.com/gabrielhuav/DB-Coursework-2026-2", "links": [{"label": "Demo", "url": "https://akibanks.github.io/tienda_musica_web/", "icon": "fas fa-play"}, {"label": "Code", "url": "https://github.com/akibanks/tienda_musica_web", "icon": "fab fa-github"}], "badgeText": "Databases Course · 2026-2", "badgeTitle": "Project developed in my Databases course (2026-2). Click for the course repository."}, {"name": "Restaurante (Equipo 21)", "desc": "Full-stack restaurant management with a live room map, menu and orders, warehouse, staff and finance modules.", "category": "web", "tech": ["JavaScript", "Vite", "Supabase", "Vercel"], "images": ["https://github.com/user-attachments/assets/d7517efb-67f0-4e54-8b56-e085099ef7bd", "https://github.com/user-attachments/assets/79e6baed-395d-487e-adc1-9ee656bb7223", "https://github.com/user-attachments/assets/772de401-0171-49cc-a700-652aa9705093", "https://github.com/user-attachments/assets/6ab4974e-8ba2-4dec-aaf5-164564c89ed2"], "badge": true, "badgeUrl": "https://github.com/gabrielhuav/DB-Coursework-2026-2", "links": [{"label": "Demo", "url": "https://proyecto-bases-snowy.vercel.app/", "icon": "fas fa-play"}, {"label": "Code", "url": "https://github.com/samLimsx/proyecto-bases", "icon": "fab fa-github"}], "badgeText": "Databases Course · 2026-2", "badgeTitle": "Project developed in my Databases course (2026-2). Click for the course repository."}, {"name": "Scynara", "desc": "Retail and multi-branch management for inventory, suppliers, products, sales, customers and users, built with React and Express.", "category": "web", "tech": ["React", "Express", "MySQL", "JWT"], "images": ["https://github.com/user-attachments/assets/4e0a99b5-fb40-44ab-9d35-57668798aaf8", "https://github.com/user-attachments/assets/4d0ae50e-22b0-4823-833f-0e30a2db2174"], "badge": true, "badgeUrl": "https://github.com/gabrielhuav/DB-Coursework-2026-2", "links": [{"label": "Demo", "url": "https://scynara-frontend.vercel.app/", "icon": "fas fa-play"}, {"label": "Code", "url": "https://github.com/scynara09-hue/Scynara-Frontend", "icon": "fab fa-github"}], "badgeText": "Databases Course · 2026-2", "badgeTitle": "Project developed in my Databases course (2026-2). Click for the course repository."}, {"name": "Notaría 105", "desc": "Notarial management platform with case files, legal clauses, digital handwritten signatures (Canvas) and a citizen transparency portal.", "category": "web", "tech": ["Flask", "Python", "PostgreSQL", "Bootstrap"], "images": ["https://github.com/user-attachments/assets/9932b8ba-6d88-487d-8d2b-4411601c175e", "https://github.com/user-attachments/assets/5dbdecb2-a3df-466c-8214-0cc138a0ec31", "https://github.com/user-attachments/assets/42c0483c-c947-4d44-b400-08c2e912a4ad", "https://github.com/user-attachments/assets/446e047b-f2e5-4d17-b529-74141bc8edc4"], "badge": true, "badgeUrl": "https://github.com/gabrielhuav/DB-Coursework-2026-2", "links": [{"label": "Demo", "url": "https://notaria-105.onrender.com/", "icon": "fas fa-play"}, {"label": "Code", "url": "https://github.com/s06008525-max/notaria-105", "icon": "fab fa-github"}], "badgeText": "Databases Course · 2026-2", "badgeTitle": "Project developed in my Databases course (2026-2). Click for the course repository."}, {"name": "Refaccionaria Leo", "desc": "E-commerce site for an auto-parts store with user authentication, inventory control and order processing.", "category": "web", "tech": ["PHP", "Tailwind", "PostgreSQL", "JavaScript"], "images": ["https://github.com/Nahum1802/Refaccionaria-Leo/blob/main/IMG/1.png?raw=true", "https://github.com/Nahum1802/Refaccionaria-Leo/blob/main/IMG/2.png?raw=true", "https://github.com/Nahum1802/Refaccionaria-Leo/blob/main/IMG/3.png?raw=true", "https://github.com/Nahum1802/Refaccionaria-Leo/blob/main/IMG/4.png?raw=true"], "badge": true, "badgeUrl": "https://github.com/gabrielhuav/DB-Coursework-2026-2", "links": [{"label": "Demo", "url": "https://nahum1802.github.io/Refaccionaria-Leo/", "icon": "fas fa-play"}, {"label": "Code", "url": "https://github.com/Nahum1802/Refaccionaria-Leo", "icon": "fab fa-github"}], "badgeText": "Databases Course · 2026-2", "badgeTitle": "Project developed in my Databases course (2026-2). Click for the course repository."}, {"name": "Distribuidora Kafra", "desc": "Integrated system for grocery-distribution inventory, sales and logistics management.", "category": "web", "tech": ["Node.js", "Express", "PostgreSQL"], "images": ["https://github.com/user-attachments/assets/4e5635a8-4fe3-4789-a8aa-ad3ef39d7300", "https://github.com/user-attachments/assets/9317424e-674d-4877-a1bd-7e6cb287e254", "https://github.com/user-attachments/assets/1d013572-cf13-4fa7-bd7a-c60fc9e334eb"], "badge": true, "badgeUrl": "https://github.com/gabrielhuav/DB-Coursework-2026-2", "links": [{"label": "Demo", "url": "https://derekarenas.github.io/kafra-dashboard/", "icon": "fas fa-play"}, {"label": "Code", "url": "https://github.com/DerekArenas/kafra-dashboard", "icon": "fab fa-github"}], "badgeText": "Databases Course · 2026-2", "badgeTitle": "Project developed in my Databases course (2026-2). Click for the course repository."}, {"name": "Payapp+", "desc": "Financial-services manager for accounts, secure authentication and payments/transactions between users.", "category": "web", "tech": ["Node.js", "Express", "PostgreSQL"], "images": ["https://github.com/iiTzDaany/PayApp/blob/main/Imagenes%20Prueba/Dashboard_Admin.png?raw=true", "https://github.com/iiTzDaany/PayApp/blob/main/Imagenes%20Prueba/Dashboard_Usuario.png?raw=true", "https://github.com/iiTzDaany/PayApp/blob/main/Imagenes%20Prueba/Inicio_de_Sesion.png?raw=true"], "badge": true, "badgeUrl": "https://github.com/gabrielhuav/DB-Coursework-2026-2", "links": [{"label": "Demo", "url": "https://iitzdaany.github.io/PayApp/", "icon": "fas fa-play"}, {"label": "Code", "url": "https://github.com/iiTzDaany/PayApp", "icon": "fab fa-github"}], "badgeText": "Databases Course · 2026-2", "badgeTitle": "Project developed in my Databases course (2026-2). Click for the course repository."}, {"name": "MANTRA", "desc": "Events social network where organizers publish events and attendees discover them, RSVP, review, follow and chat.", "category": "web", "tech": ["Node.js", "Express", "PostgreSQL", "Cloudinary"], "images": ["https://github.com/user-attachments/assets/42a1b548-17ca-46eb-aeef-fc862a6ce4c0", "https://github.com/user-attachments/assets/6c369928-ee59-4f45-bce8-97b4a5c7edde", "https://github.com/user-attachments/assets/873197d9-57de-4f03-9024-a659d2f122a4", "https://github.com/user-attachments/assets/6ef71a19-5c95-4625-8077-2fa7774410f2"], "badge": true, "badgeUrl": "https://github.com/gabrielhuav/DB-Coursework-2026-2", "links": [{"label": "Demo", "url": "https://mantra-backend-24g1.onrender.com/", "icon": "fas fa-play"}, {"label": "Code", "url": "https://github.com/JULIO-MILAN/mantra-backend", "icon": "fab fa-github"}], "badgeText": "Databases Course · 2026-2", "badgeTitle": "Project developed in my Databases course (2026-2). Click for the course repository."}, {"name": "Compañía de Danza", "desc": "Admin app for a dance company: members, dances, performances, formations, observations and inventory.", "category": "web", "tech": ["JavaScript", "Supabase", "PostgreSQL", "Vercel"], "images": ["https://github.com/user-attachments/assets/363efd33-a4d3-4cf6-97e7-a35b43497171", "https://github.com/user-attachments/assets/c4aee3e2-8a28-4906-9400-feac535b7141", "https://github.com/user-attachments/assets/fc762a02-3e1a-4d5c-9de4-f1178b10ce7b", "https://github.com/user-attachments/assets/af3c6509-8157-4619-9a3a-d8a113c06d70"], "badge": true, "badgeUrl": "https://github.com/gabrielhuav/DB-Coursework-2026-2", "links": [{"label": "Demo", "url": "https://grupo-jaltepec-bd.vercel.app/", "icon": "fas fa-play"}, {"label": "Code", "url": "https://github.com/avril1699/Grupo-Jaltepec-BD", "icon": "fab fa-github"}], "badgeText": "Databases Course · 2026-2", "badgeTitle": "Project developed in my Databases course (2026-2). Click for the course repository."}, {"name": "ABV Library", "desc": "Library and bookstore management with sales, loans with automatic fines, loyalty points, donations and Open Library search.", "category": "web", "tech": ["Node.js", "Express", "PostgreSQL", "bcrypt"], "images": ["https://raw.githubusercontent.com/AbelGod27/Libreria_va/main/docs/01-catalogo.png", "https://raw.githubusercontent.com/AbelGod27/Libreria_va/main/docs/03-login.png", "https://raw.githubusercontent.com/AbelGod27/Libreria_va/main/docs/04-admin-panel.png", "https://raw.githubusercontent.com/AbelGod27/Libreria_va/main/docs/08-portal-cliente.png"], "badge": true, "badgeUrl": "https://github.com/gabrielhuav/DB-Coursework-2026-2", "links": [{"label": "Demo", "url": "https://abelgod27.github.io/abv_library/", "icon": "fas fa-play"}, {"label": "Code", "url": "https://github.com/AbelGod27/Libreria_va", "icon": "fab fa-github"}], "badgeText": "Databases Course · 2026-2", "badgeTitle": "Project developed in my Databases course (2026-2). Click for the course repository."}, {"name": "Barber Cerdas", "desc": "Barbershop booking system unifying online, phone and walk-in appointments, with a real-time barber dashboard and email confirmation.", "category": "web", "tech": ["Supabase", "PostgreSQL", "Realtime", "Vercel"], "images": ["https://raw.githubusercontent.com/StrlgE26/Barberia/main/barber-cerdas/img/01-landing.png", "https://raw.githubusercontent.com/StrlgE26/Barberia/main/barber-cerdas/img/02-servicios.png", "https://raw.githubusercontent.com/StrlgE26/Barberia/main/barber-cerdas/img/03-equipo.png", "https://raw.githubusercontent.com/StrlgE26/Barberia/main/barber-cerdas/img/06-agendar.png"], "badge": true, "badgeUrl": "https://github.com/gabrielhuav/DB-Coursework-2026-2", "links": [{"label": "Demo", "url": "https://www.koddesolutions.com/", "icon": "fas fa-play"}, {"label": "Code", "url": "https://github.com/StrlgE26/Barberia", "icon": "fab fa-github"}], "badgeText": "Databases Course · 2026-2", "badgeTitle": "Project developed in my Databases course (2026-2). Click for the course repository."}, {"name": "Carnicería Camacho", "desc": "Butcher-shop management for products, clients, suppliers and sales, with automatic tax and total calculation on Supabase.", "category": "web", "tech": ["JavaScript", "Supabase", "PostgreSQL", "RLS"], "images": ["https://github.com/user-attachments/assets/35ec3b13-3e45-430f-b918-a2746ce77ecf", "https://github.com/user-attachments/assets/288cf883-9485-49e2-8df8-5de2ba3c2fbd", "https://github.com/user-attachments/assets/cf3d4ac4-8aa1-4345-84a8-298096fb80af"], "badge": true, "badgeUrl": "https://github.com/gabrielhuav/DB-Coursework-2026-2", "links": [{"label": "Demo", "url": "https://ivanrvillegas10-dev.github.io/carniceria/", "icon": "fas fa-play"}, {"label": "Code", "url": "https://github.com/ivanrvillegas10-dev/carniceria", "icon": "fab fa-github"}], "badgeText": "Databases Course · 2026-2", "badgeTitle": "Project developed in my Databases course (2026-2). Click for the course repository."}, {"name": "BiblioTech ESCOM", "desc": "ESCOM library platform: explore millions of books via Open Library, manage local physical loans, with i18n and dark mode.", "category": "web", "tech": ["Supabase", "PostgreSQL", "Open Library", "JavaScript"], "images": ["https://github.com/xsuik33/xsuik33.github.io/blob/main/Page.png?raw=true", "https://github.com/xsuik33/xsuik33.github.io/blob/main/Login.png?raw=true", "https://github.com/xsuik33/xsuik33.github.io/blob/main/Register.png?raw=true", "https://github.com/xsuik33/xsuik33.github.io/blob/main/Preview.png?raw=true"], "badge": true, "badgeUrl": "https://github.com/gabrielhuav/DB-Coursework-2026-2", "links": [{"label": "Demo", "url": "https://xsuik33.github.io/", "icon": "fas fa-play"}, {"label": "Code", "url": "https://github.com/xsuik33/xsuik33.github.io", "icon": "fab fa-github"}], "badgeText": "Databases Course · 2026-2", "badgeTitle": "Project developed in my Databases course (2026-2). Click for the course repository."}, {"name": "Ferretería Tico", "desc": "Hardware-store inventory system with full CRUD, search and filters, low-stock alerts and automatic statistics.", "category": "web", "tech": ["JavaScript", "Supabase", "PostgreSQL"], "images": ["https://github.com/user-attachments/assets/e85709c9-fa1c-40fe-8851-922d6c3d2d75", "https://github.com/user-attachments/assets/e0353579-6c93-48d3-9808-852378772e38", "https://github.com/user-attachments/assets/edf6f49b-4463-4dcb-a9aa-d3c264ee403d"], "badge": true, "badgeUrl": "https://github.com/gabrielhuav/DB-Coursework-2026-2", "links": [{"label": "Demo", "url": "https://itzelnavarrete.github.io/ferreteria-TICO/index.html", "icon": "fas fa-play"}, {"label": "Code", "url": "https://github.com/itzelnavarrete/ferreteria-TICO", "icon": "fab fa-github"}], "badgeText": "Databases Course · 2026-2", "badgeTitle": "Project developed in my Databases course (2026-2). Click for the course repository."}, {"name": "Sistema de Citas Médicas", "desc": "Web system to book and manage hospital medical appointments, with per-doctor sessions and prescriptions.", "category": "web", "tech": ["Java", "PostgreSQL", "Bootstrap", "JavaScript"], "images": ["https://github.com/user-attachments/assets/7e617b84-42e8-49f9-8907-274c34e515bd", "https://github.com/user-attachments/assets/cfd6fdaf-692a-43a2-83fd-e357257a4117", "https://github.com/user-attachments/assets/c40df635-46ac-4868-8750-0b76bc2a32ce"], "badge": true, "badgeUrl": "https://github.com/gabrielhuav/DB-Coursework-2026-2", "links": [{"label": "Demo", "url": "https://sistemamedico-1gmy.onrender.com/", "icon": "fas fa-play"}, {"label": "Code", "url": "https://github.com/AugustoHFV/SistemaMedicoHOST", "icon": "fab fa-github"}], "badgeText": "Databases Course · 2026-2", "badgeTitle": "Project developed in my Databases course (2026-2). Click for the course repository."}, {"name": "Huellitas", "desc": "Web platform for an animal foundation with a database of animals available for adoption and a donations module.", "category": "web", "tech": ["JavaScript", "PostgreSQL", "CSS"], "images": ["https://github.com/user-attachments/assets/f4101a5b-38cd-4a72-bd41-1ae500c4301b", "https://github.com/user-attachments/assets/2c98c9e6-239b-43a4-a988-448c29393ad6", "https://github.com/user-attachments/assets/7aca0e43-14f4-4d68-af34-8d052f3c9f53", "https://github.com/user-attachments/assets/d0c31a67-85c2-4223-be17-a3bbfe92ee27"], "badge": true, "badgeUrl": "https://github.com/gabrielhuav/DB-Coursework-2026-2", "links": [{"label": "Demo", "url": "https://sofi-14.github.io/gitfin/", "icon": "fas fa-play"}, {"label": "Code", "url": "https://github.com/sofi-14/gitfin", "icon": "fab fa-github"}], "badgeText": "Databases Course · 2026-2", "badgeTitle": "Project developed in my Databases course (2026-2). Click for the course repository."}, {"name": "Carnicería La Ideal", "desc": "Product-reception control for a meat company: sensory checks, temperature, packaging and evidence, with roles and an admin panel.", "category": "web", "tech": ["PHP", "MySQL", "JavaScript", "phpMyAdmin"], "images": ["https://github.com/aleaguiballos-cell/ProyectoBD2/blob/main/screenshot/login.png?raw=true", "https://github.com/aleaguiballos-cell/ProyectoBD2/blob/main/screenshot/Formulario.png?raw=true", "https://github.com/aleaguiballos-cell/ProyectoBD2/blob/main/screenshot/registro.png?raw=true"], "badge": true, "badgeUrl": "https://github.com/gabrielhuav/DB-Coursework-2026-2", "links": [{"label": "Demo", "url": "https://carnicerialaidealescom1.page.gd/CARNES/Login.html", "icon": "fas fa-play"}, {"label": "Code", "url": "https://github.com/aleaguiballos-cell/ProyectoBD2", "icon": "fab fa-github"}], "badgeText": "Databases Course · 2026-2", "badgeTitle": "Project developed in my Databases course (2026-2). Click for the course repository."}, {"name": "La Casita", "desc": "Academic web system to manage a convenience store built with Laravel and MySQL, containerized with Docker. Manages products, categories, clients, employees, suppliers, branches, inventory, promotions and sales with role-based access.", "category": "web", "tech": ["Laravel", "PHP", "MySQL", "Docker", "Railway"], "images": ["capturas/Inicio.png", "capturas/CATALOGO.png", "capturas/Oferta.png", "capturas/ADMIN.png"], "badge": true, "badgeUrl": "https://github.com/gabrielhuav/DB-Coursework-2026-2", "links": [{"label": "Demo", "url": "https://lacasita-production-560a.up.railway.app", "icon": "fas fa-play"}, {"label": "Code", "url": "https://github.com/DVD-BD/LaCasita", "icon": "fab fa-github"}], "badgeText": "Databases Course · 2026-2", "badgeTitle": "Project developed in my Databases course (2026-2). Click for the course repository."}, {"name": "Patitas Sanas", "desc": "Veterinary clinic with React + Vite, automated appointment scheduling by specialty and real-time availability, interactive client portal and internal admin panel for agenda and medical records.", "category": "web", "tech": ["React", "Vite", "Node.js", "Supabase", "PostgreSQL"], "images": ["https://raw.githubusercontent.com/Jaely19/Patitas-Sanas/main/fotos/inicio.png", "https://raw.githubusercontent.com/Jaely19/Patitas-Sanas/main/fotos/servicios.png", "https://raw.githubusercontent.com/Jaely19/Patitas-Sanas/main/fotos/login.png", "https://raw.githubusercontent.com/Jaely19/Patitas-Sanas/main/fotos/cita-1.png"], "badge": true, "badgeUrl": "https://github.com/gabrielhuav/DB-Coursework-2026-2", "links": [{"label": "Demo", "url": "https://patitas-sanas.vercel.app", "icon": "fas fa-play"}, {"label": "Code", "url": "https://github.com/Jaely19/Patitas-Sanas", "icon": "fab fa-github"}], "badgeText": "Databases Course · 2026-2", "badgeTitle": "Project developed in my Databases course (2026-2). Click for the course repository."}, {"name": "Data Warehouse CDMX", "desc": "Analysis of correlation between water consumption and climate in Mexico City (2019) with Docker + ETL. Integrates bimonthly SACMEX data with daily Open-Meteo climate data in a star schema on PostgreSQL.", "category": "web", "tech": ["Docker", "PostgreSQL", "SQL", "ETL", "Star Schema"], "images": [], "badge": true, "badgeUrl": "https://github.com/gabrielhuav/DB-Coursework-2026-2", "links": [{"label": "Code", "url": "https://github.com/omarpulidom/data_warehouse_cdmx", "icon": "fab fa-github"}], "badgeText": "Databases Course · 2026-2", "badgeTitle": "Project developed in my Databases course (2026-2). Click for the course repository."}, {"name": "PAPIROSSO", "desc": "Automated billing, merchandise registration and online ordering system for a stationery store. Frequent customers can access an exclusive portal to place orders and pick them up at the physical branch.", "category": "web", "tech": ["JavaScript", "HTML", "CSS"], "images": ["https://github.com/jorvsk2007/jorvsk2007.github.io/blob/main/imagenesRepoGeneral/2026-05-29_18-44-20.png?raw=true", "https://github.com/jorvsk2007/jorvsk2007.github.io/blob/main/imagenesRepoGeneral/2026-05-29_18-45-33.png?raw=true", "https://github.com/jorvsk2007/jorvsk2007.github.io/blob/main/imagenesRepoGeneral/2026-05-29_18-46-30.png?raw=true"], "badge": true, "badgeUrl": "https://github.com/gabrielhuav/DB-Coursework-2026-2", "links": [{"label": "Demo", "url": "https://jorvsk2007.github.io/Papirosso/", "icon": "fas fa-play"}, {"label": "Code", "url": "https://github.com/jorvsk2007/jorvsk2007.github.io", "icon": "fab fa-github"}], "badgeText": "Databases Course · 2026-2", "badgeTitle": "Project developed in my Databases course (2026-2). Click for the course repository."}, {"name": "Medical System", "desc": "Medical management system built with Spring Boot and Docker. Features bilingual support (Spanish/English), patient management, appointment scheduling, and containerized deployment for scalability.", "category": "web", "tech": ["Spring Boot", "Java", "Docker", "MySQL", "JavaScript", "i18n"], "images": ["https://github.com/gabrielhuav/SistemaMedico/blob/main/Evidencias/C2.png?raw=true", "https://github.com/gabrielhuav/SistemaMedico/blob/main/Evidencias/C3.png?raw=true", "https://github.com/gabrielhuav/SistemaMedico/blob/main/Evidencias/C4.png?raw=true", "https://github.com/gabrielhuav/SistemaMedico/blob/main/Evidencias/C5.png?raw=true", "https://github.com/gabrielhuav/SistemaMedico/blob/main/Evidencias/C6.png?raw=true", "https://github.com/gabrielhuav/SistemaMedico/blob/main/Evidencias/C7.png?raw=true", "https://github.com/gabrielhuav/SistemaMedico/blob/main/Evidencias/C1.png?raw=true", "https://github.com/gabrielhuav/SistemaMedico/blob/main/Evidencias/C8.png?raw=true"], "badge": false, "badgeUrl": "", "links": [{"label": "Screenshots", "url": "https://github.com/gabrielhuav/SistemaMedico/tree/main/Evidencias", "icon": "fas fa-images"}, {"label": "Code", "url": "https://github.com/gabrielhuav/SistemaMedico", "icon": "fab fa-github"}]}, {"name": "Multimodal Recommendation System", "desc": "Django-based content discovery platform with intelligent recommendations for anime and books. Features unified favorites system, multi-language support, and API integrations with MyAnimeList and OpenLibrary. Containerized with Docker and PostgreSQL.", "category": "web", "tech": ["Django", "Python", "Docker", "PostgreSQL", "REST API", "i18n", "Bootstrap"], "images": ["https://github.com/gabrielhuav/Multimodal-Recommendation-System-Django/blob/main/screenshots/1.png?raw=true", "https://github.com/gabrielhuav/Multimodal-Recommendation-System-Django/blob/main/screenshots/2.png?raw=true", "https://github.com/gabrielhuav/Multimodal-Recommendation-System-Django/blob/main/screenshots/3.png?raw=true", "https://github.com/gabrielhuav/Multimodal-Recommendation-System-Django/blob/main/screenshots/4.png?raw=true", "https://github.com/gabrielhuav/Multimodal-Recommendation-System-Django/blob/main/screenshots/5.png?raw=true", "https://github.com/gabrielhuav/Multimodal-Recommendation-System-Django/blob/main/screenshots/6.png?raw=true", "https://github.com/gabrielhuav/Multimodal-Recommendation-System-Django/blob/main/screenshots/7.png?raw=true", "https://github.com/gabrielhuav/Multimodal-Recommendation-System-Django/blob/main/screenshots/8.png?raw=true"], "badge": false, "badgeUrl": "", "links": [{"label": "Screenshots", "url": "https://github.com/gabrielhuav/Multimodal-Recommendation-System-Django/tree/main/screenshots", "icon": "fas fa-images"}, {"label": "Code", "url": "https://github.com/gabrielhuav/Multimodal-Recommendation-System-Django", "icon": "fab fa-github"}]}, {"name": "Seismic Data Visualization System", "desc": "Interactive seismic data visualization platform for Mexico using real-time data from Servicio Sismológico Nacional (SSN) and INEGI. Features dynamic charts, maps, and statistical analysis with containerized deployment using Docker and PostgreSQL.", "category": "web", "tech": ["PHP", "JavaScript", "Docker", "PostgreSQL", "Data Viz", "SSN API", "INEGI"], "images": ["https://github.com/gabrielhuav/DWSismos/blob/main/screenshots/1.png?raw=true", "https://github.com/gabrielhuav/DWSismos/blob/main/screenshots/2.png?raw=true", "https://github.com/gabrielhuav/DWSismos/blob/main/screenshots/3.png?raw=true", "https://github.com/gabrielhuav/DWSismos/blob/main/screenshots/4.png?raw=true", "https://github.com/gabrielhuav/DWSismos/blob/main/screenshots/5.png?raw=true"], "badge": false, "badgeUrl": "", "links": [{"label": "Screenshots", "url": "https://github.com/gabrielhuav/DWSismos/tree/main/screenshots", "icon": "fas fa-images"}, {"label": "Code", "url": "https://github.com/gabrielhuav/DWSismos", "icon": "fab fa-github"}, {"label": "Paper", "url": "https://doi.org/10.24275/AZC2026E1004", "icon": "fas fa-file-lines"}]}]};
-            window.SC_LABELS = {"badge": "DB Course 2026-2"};
-            </script>
-            <!-- GitHub Link -->
-            <div class="row mt-4">
-                <div class="col-12 text-center" data-aos="fade-up">
-                    <a href="https://github.com/gabrielhuav" target="_blank" class="btn btn-outline-primary btn-lg">
-                        <i class="fab fa-github me-2"></i>View more projects on GitHub
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="section-padding bg-light">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center mb-5" data-aos="fade-up">
-                    <h2 class="section-title">Technical Skills</h2>
-                    <p class="section-subtitle">Technologies and tools I master</p>
-                </div>
-            </div>
-            
-            <!-- Programming Languages -->
-            <div class="row mb-5">
-                <div class="col-lg-6 mb-4" data-aos="fade-right">
-                    <div class="skill-category">
-                        <div class="category-header">
-                            <i class="fas fa-code"></i>
-                            <h4>Programming Languages</h4>
-                        </div>
-                        <div class="skills-grid">
-                            <div class="skill-tag featured">Python</div>
-                            <div class="skill-tag featured">Java</div>
-                            <div class="skill-tag featured">Kotlin</div>
-                            <div class="skill-tag">JavaScript</div>
-                            <div class="skill-tag">C++</div>
-                            <div class="skill-tag">MATLAB</div>
-                            <div class="skill-tag">Dart</div>
-                            <div class="skill-tag">PHP</div>
-                            <div class="skill-tag">HTML/CSS</div>
-                            <div class="skill-tag">SQL</div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Frameworks & Tools -->
-                <div class="col-lg-6 mb-4" data-aos="fade-left">
-                    <div class="skill-category">
-                        <div class="category-header">
-                            <i class="fas fa-tools"></i>
-                            <h4>Frameworks & Tools</h4>
-                        </div>
-                        <div class="skills-grid">
-                            <div class="skill-tag featured">Django</div>
-                            <div class="skill-tag featured">Spring Boot</div>
-                            <div class="skill-tag featured">Git & GitHub</div>
-                            <div class="skill-tag">Qt & QML</div>
-                            <div class="skill-tag">Linux</div>
-                            <div class="skill-tag">Jira</div>
-                            <div class="skill-tag">Verilog</div>
-                            <div class="skill-tag">Office Suite</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Technology Icons -->
-            <div class="row mb-5">
-                <div class="col-12 text-center">
-                    <h4 class="tech-icons-title">Technologies I use</h4>
-                    <div class="tech-icons">
-                        <i class="fab fa-python" title="Python"></i>
-                        <i class="fab fa-java" title="Java"></i>
-                        <i class="fas fa-leaf" title="Spring Boot"></i>
-                        <i class="fab fa-js-square" title="JavaScript"></i>
-                        <i class="fab fa-html5" title="HTML5"></i>
-                        <i class="fab fa-css3-alt" title="CSS3"></i>
-                        <i class="fab fa-python" title="Django"></i>						
-                        <i class="fab fa-git-alt" title="Git"></i>						
-                        <i class="fab fa-github" title="GitHub"></i>
-                        <i class="fab fa-linux" title="Linux"></i>
-                        <i class="fab fa-android" title="Android/Kotlin"></i>
-                        <i class="fas fa-database" title="SQL"></i>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Specializations -->
-            <div class="row">
-                <div class="col-12" data-aos="fade-up">
-                    <div class="specializations">
-                        <h4 class="spec-title">Specialties</h4>
-                        <div class="spec-grid">
-                            <div class="spec-item">
-                                <i class="fas fa-robot"></i>
-                                <span>Machine Learning</span>
-                            </div>
-                            <div class="spec-item">
-                                <i class="fas fa-chart-line"></i>
-                                <span>Data Analysis</span>
-                            </div>
-                            <div class="spec-item">
-                                <i class="fas fa-microchip"></i>
-                                <span>Internet of Things</span>
-                            </div>
-                            <div class="spec-item">
-                                <i class="fas fa-cogs"></i>
-                                <span>Software Development</span>
-                            </div>
-                            <div class="spec-item">
-                                <i class="fas fa-project-diagram"></i>
-                                <span>Agile Methodologies</span>
-                            </div>
-                            <div class="spec-item">
-                                <i class="fas fa-brain"></i>
-                                <span>Large Language Models</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="section-padding bg-light">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center mb-5" data-aos="fade-up">
-                    <h2 class="section-title">Professional Experience</h2>
-                    <p class="section-subtitle">My professional journey and projects</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-10 offset-lg-1">
-                    <div class="timeline">
-                        <!-- Current Position -->
-                        <div class="timeline-item" data-aos="fade-up">
-                            <div class="timeline-marker current">
-                                <i class="fas fa-chalkboard-teacher"></i>
-                            </div>
-                            <div class="timeline-content current">
-                                <div class="timeline-header">
-                                    <h5>Professor at Computer Science and Engineering Department</h5>
-                                    <span class="company">National Polytechnic Institute - ESCOM</span>
-                                    <span class="period">August 2024 - Present</span>
-                                </div>
-                                <p class="timeline-description">
-                                    Teaching in subjects related to programming, software development and emerging 
-                                    technologies. Supervision of student projects in areas of IoT, machine learning 
-                                    and application development.
-                                </p>
-                                <div class="timeline-tags">
-                                    <span class="tag">Teaching</span>
-                                    <span class="tag">Programming</span>
-                                    <span class="tag">Projects</span>
-                                    <span class="tag">Research</span>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Weldmation Project -->
-                        <div class="timeline-item" data-aos="fade-up">
-                            <div class="timeline-marker">
-                                <i class="fas fa-laptop-code"></i>
-                            </div>
-                            <div class="timeline-content">
-                                <div class="timeline-header">
-                                    <h5>Project Engineer / Customer Interface Experience Developer</h5>
-                                    <span class="company">Weldmation de México / Ford México</span>
-                                    <span class="period">December 2021 - June 2023</span>
-                                </div>
-                                <p class="timeline-description">
-                                    User interface development for instrument dashboards using QML and Qt. Development 
-                                    of interface experiences for clients. Project management with agile methodologies and 
-                                    collaboration in multidisciplinary teams for implementing innovative technological solutions.
-                                </p>
-                                <div class="timeline-tags">
-                                    <span class="tag">QML</span>
-                                    <span class="tag">Qt</span>
-                                    <span class="tag">JavaScript</span>
-                                    <span class="tag">GitHub</span>
-                                    <span class="tag">Jira</span>
-                                    <span class="tag">UX/UI</span>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- TTEC -->
-                        <div class="timeline-item" data-aos="fade-up">
-                            <div class="timeline-marker">
-                                <i class="fas fa-headset"></i>
-                            </div>
-                            <div class="timeline-content">
-                                <div class="timeline-header">
-                                    <h5>Bilingual Customer Service Representative</h5>
-                                    <span class="company">TTEC</span>
-                                    <span class="period">Professional experience</span>
-                                </div>
-                                <p class="timeline-description">
-                                    Bilingual customer service with focus on digital transformation through 
-                                    cloud-based technologies. Development of intercultural communication skills 
-                                    and technical support experience.
-                                </p>
-                                <div class="timeline-tags">
-                                    <span class="tag">Communication</span>
-                                    <span class="tag">Cloud Technology</span>
-                                    <span class="tag">Bilingual</span>
-                                    <span class="tag">Technical Support</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Education Section -->
-    <section id="education" class="section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center mb-5" data-aos="fade-up">
-                    <h2 class="section-title">Education</h2>
-                    <p class="section-subtitle">Academic background and certifications</p>
-                </div>
-            </div>
-            <div class="row">
-                <!-- Current Education -->
-                <div class="col-lg-6 mb-4" data-aos="fade-right">
-                    <div class="education-card current">
-                        <div class="card-header">
-                            <div class="education-icon">
-                                <i class="fas fa-graduation-cap"></i>
-                            </div>
-                            <div class="status-badge current">In Progress</div>
-                        </div>
-                        <div class="card-body">
-                            <h5>Master's in Computer Science</h5>
-                            <h6>Universidad Autónoma Metropolitana</h6>
-                            <p class="institution">Azcapotzalco Campus</p>
-                            <span class="period">2023 - 2025</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-lg-6 mb-4" data-aos="fade-left">
-                    <div class="education-card current">
-                        <div class="card-header">
-                            <div class="education-icon">
-                                <i class="fas fa-chalkboard-teacher"></i>
-                            </div>
-                            <div class="status-badge current">In Progress</div>
-                        </div>
-                        <div class="card-body">
-                            <h5>Master's in Teaching for Higher Secondary Education - Mathematics Area</h5>
-                            <h6>Universidad Nacional Autónoma de México (UNAM)</h6>
-                            <p class="institution">Faculty of Higher Studies Acatlán</p>
-                            <span class="period">2023 - 2025</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Completed Education -->
-                <div class="col-lg-12 mb-4" data-aos="fade-up">
-                    <div class="education-card completed">
-                        <div class="card-header">
-                            <div class="education-icon">
-                                <i class="fas fa-laptop-code"></i>
-                            </div>
-                            <div class="status-badge completed">Completed</div>
-                        </div>
-                        <div class="card-body">
-                            <h5>Computer Engineering</h5>
-                            <h6>Universidad Autónoma Metropolitana</h6>
-                            <p class="institution">Azcapotzalco Campus</p>
-                            <span class="period">2017 - 2022</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Certifications -->
-            <div class="row mt-5">
-                <div class="col-12 text-center mb-4">
-                    <h4 class="certifications-title">Certifications and Additional Training</h4>
-                </div>
-                <div class="col-lg-4 mb-3" data-aos="fade-up" data-aos-delay="100">
-                    <div class="certification-card">
-                        <div class="cert-icon">
-                            <i class="fas fa-microchip"></i>
-                        </div>
-                        <div class="cert-content">
-                            <h6>Internet of Things</h6>
-                            <p class="cert-org">Samsung Innovation Campus</p>
-                            <p class="cert-details">160 hours - CAPSTONE Project</p>
-                            <span class="cert-year">2021-2022</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 mb-3" data-aos="fade-up" data-aos-delay="200">
-                    <div class="certification-card">
-                        <div class="cert-icon">
-                            <i class="fas fa-globe"></i>
-                        </div>
-                        <div class="cert-content">
-                            <h6>Advanced English (C1)</h6>
-                            <p class="cert-org">The Anglo Mexican Foundation</p>
-                            <p class="cert-details">Level C1.4, C1.5, C1.6 - 144 hours</p>
-                            <span class="cert-year">2023-2024</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 mb-3" data-aos="fade-up" data-aos-delay="300">
-                    <div class="certification-card">
-                        <div class="cert-icon">
-                            <i class="fas fa-certificate"></i>
-                        </div>
-                        <div class="cert-content">
-                            <h6>Cambridge FCE</h6>
-                            <p class="cert-org">Universidad Nacional Autónoma de México</p>
-                            <p class="cert-details">FCE 2 and FCE 3 Preparation - B2 Level</p>
-                            <span class="cert-year">2020-2021</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Publications Section -->
-    <section id="publications" class="section-padding bg-light">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center mb-5" data-aos="fade-up">
-                    <h2 class="section-title">Publications</h2>
-                    <p class="section-subtitle">Academic and research contributions</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-6 mb-4" data-aos="fade-right">
-                    <div class="publication-card">
-                        <div class="pub-header">
-                            <div class="pub-icon">
-                                <i class="fas fa-newspaper"></i>
-                            </div>
-                            <div class="pub-type">Indexed Journal Article — First Author</div>
-                        </div>
-                        <div class="pub-content">
-                            <h5>Systematic Fine-Tuning of Transformer Models for Domain-Specific Misinformation Detection in Spanish Social Media Text</h5>
-                            <p class="pub-book">
-                                <strong>Journal:</strong> Informatics (MDPI), 13(6), 83
-                            </p>
-                            <div class="pub-details">
-                                <span class="pub-isbn">Impact Factor 5.1 · CiteScore 9.1</span>
-                                <span class="pub-year">2026</span>
-                            </div>
-                            <a href="https://doi.org/10.3390/informatics13060083" target="_blank" rel="noopener" class="pub-doi"><i class="fas fa-up-right-from-square"></i> DOI: 10.3390/informatics13060083</a>
-                            <div class="pub-tags">
-                                <span class="tag">NLP</span>
-                                <span class="tag">Transformers</span>
-                                <span class="tag">Misinformation</span>
-                                <span class="tag">Spanish</span>
-                                <span class="tag">Deep Learning</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 mb-4" data-aos="fade-left">
-                    <div class="publication-card">
-                        <div class="pub-header">
-                            <div class="pub-icon">
-                                <i class="fas fa-wave-square"></i>
-                            </div>
-                            <div class="pub-type">Science Outreach Article — Co-author</div>
-                        </div>
-                        <div class="pub-content">
-                            <h5>Cuando México tiembla: la historia contada por los datos</h5>
-                            <p class="pub-book">
-                                <strong>Magazine:</strong> AZCATL — Science Outreach (UAM), 4(6), 28–33
-                            </p>
-                            <div class="pub-details">
-                                <span class="pub-isbn">Science communication</span>
-                                <span class="pub-year">2026</span>
-                            </div>
-                            <a href="https://doi.org/10.24275/AZC2026E1004" target="_blank" rel="noopener" class="pub-doi"><i class="fas fa-up-right-from-square"></i> DOI: 10.24275/AZC2026E1004</a>
-                            <div class="pub-tags">
-                                <span class="tag">Seismic Data</span>
-                                <span class="tag">Data Science</span>
-                                <span class="tag">Outreach</span>
-                                <span class="tag">Mexico</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 mb-4" data-aos="fade-right">
-                    <div class="publication-card">
-                        <div class="pub-header">
-                            <div class="pub-icon">
-                                <i class="fas fa-robot"></i>
-                            </div>
-                            <div class="pub-type">Book Chapter - Main Author</div>
-                        </div>
-                        <div class="pub-content">
-                            <h5>Ontological representation of the control architecture of a SCARA robot using IoT and MATLAB</h5>
-                            <p class="pub-book">
-                                <strong>Book:</strong> "Recent advances in natural language processing and other related areas"
-                            </p>
-                            <div class="pub-details">
-                                <span class="pub-isbn">ISBN: 978-607-5914-56-5</span>
-                                <span class="pub-year">2024</span>
-                            </div>
-                            <div class="pub-tags">
-                                <span class="tag">IoT</span>
-                                <span class="tag">MATLAB</span>
-                                <span class="tag">Robotics</span>
-                                <span class="tag">Control</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 mb-4" data-aos="fade-left">
-                    <div class="publication-card">
-                        <div class="pub-header">
-                            <div class="pub-icon">
-                                <i class="fas fa-shield-alt"></i>
-                            </div>
-                            <div class="pub-type">Book Chapter - Main Author</div>
-                        </div>
-                        <div class="pub-content">
-                            <h5>Hyperparameter calibration in metaheuristic algorithms for digital fraud detection</h5>
-                            <p class="pub-book">
-                                <strong>Book:</strong> "Recent advances in natural language processing and other related areas"
-                            </p>
-                            <div class="pub-details">
-                                <span class="pub-isbn">ISBN: 978-607-5914-56-5</span>
-                                <span class="pub-year">2024</span>
-                            </div>
-                            <div class="pub-tags">
-                                <span class="tag">Machine Learning</span>
-                                <span class="tag">Metaheuristics</span>
-                                <span class="tag">Cybersecurity</span>
-                                <span class="tag">Digital Fraud</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Teaching Section -->
-    <section id="teaching" class="section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center" data-aos="fade-up">
-                    <h2 class="section-title">Teaching</h2>
-                    <p class="section-subtitle">The course projects shown above come from my students' public repositories</p>
-                    <div class="course-repos">
-                        <a class="course-repo-btn" href="https://github.com/gabrielhuav/DB-Coursework-2026-2" target="_blank" rel="noopener">
-                            <i class="fas fa-database"></i>
-                            <span class="repo-title">Databases Course · 2026-2</span>
-                            <span class="repo-sub">Web projects repository</span>
-                        </a>
-                        <a class="course-repo-btn" href="https://github.com/gabrielhuav/MobileApp-Coursework-2026-1" target="_blank" rel="noopener">
-                            <i class="fab fa-android"></i>
-                            <span class="repo-title">Native Mobile Apps · 2026-1</span>
-                            <span class="repo-sub">Android projects repository</span>
-                        </a>
-                        <button class="course-repo-btn course-repo-toggle" type="button" data-target="moreRepos" aria-expanded="false">
-                            <i class="fas fa-graduation-cap"></i>
-                            <span class="repo-title">Student Projects Gallery</span>
-                            <span class="repo-sub">Show more repositories <i class="fas fa-chevron-down toggle-chevron"></i></span>
-                        </button>
-                    </div>
-                    <div class="course-repos course-repos-more" id="moreRepos" hidden>
-                        <a class="course-repo-btn" href="https://github.com/gabrielhuav/DB-Coursework-2026-1" target="_blank" rel="noopener">
-                            <i class="fas fa-database"></i>
-                            <span class="repo-title">Databases Course · 2026-1</span>
-                            <span class="repo-sub">Previous web projects repository</span>
-                        </a>
-                        <a class="course-repo-btn" href="https://gabrielhuav.github.io/student-projects/" target="_blank" rel="noopener">
-                            <i class="fas fa-graduation-cap"></i>
-                            <span class="repo-title">Projects Gallery (site)</span>
-                            <span class="repo-sub">Hosted student showcase</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="section-padding bg-light">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center mb-5" data-aos="fade-up">
-                    <h2 class="section-title">Contact</h2>
-                    <p class="section-subtitle">Interested in collaborating? Let's get in touch!</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-8 offset-lg-2">
-                    <div class="contact-grid">
-                        <div class="contact-info" data-aos="fade-up" data-aos-delay="100">
-                            <div class="contact-icon">
-                                <i class="fab fa-github"></i>
-                            </div>
-                            <div class="contact-details">
-                                <h5>GitHub</h5>
-                                <a href="https://github.com/gabrielhuav" target="_blank">
-                                    github.com/gabrielhuav
-                                </a>
-                            </div>
-                        </div>
-                        <div class="contact-info" data-aos="fade-up" data-aos-delay="200">
-                            <div class="contact-icon">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <div class="contact-details">
-                                <h5>Location</h5>
-                                <p>Mexico City, Mexico</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="contact-form-container" data-aos="fade-up">
-                        <h4 class="form-title">Contact me directly</h4>
-                        <p>Click the following link to send me an email from your email client:</p>
-                        <div class="text-center">
-                            <a href="mailto:ghurtadoa@ipn.mx" class="btn btn-primary">
-                                <i class="fas fa-envelope me-2"></i>Send email
-                            </a>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <p class="footer-text">&copy; 2024 Gabriel Hurtado Avilés. All rights reserved.</p>
-                </div>
-                <div class="col-md-6 text-end">
-                    <div class="social-links">
-                        <a href="https://github.com/gabrielhuav" target="_blank" title="GitHub">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="#" title="LinkedIn">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="#" title="ResearchGate">
-                            <i class="fab fa-researchgate"></i>
-                        </a>
-                        <a href="#" title="ORCID">
-                            <i class="fab fa-orcid"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- AOS Animation -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <!-- Custom JS -->
-    <script src="assets/js/main.js"></script>
+    <script>
+        // Auto-redirect after 3 seconds
+        setTimeout(() => {
+            window.location.href = 'android.html';
+        }, 3000);
+    </script>
 </body>
 </html>
