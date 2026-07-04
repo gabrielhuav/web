@@ -553,3 +553,17 @@ document.addEventListener('DOMContentLoaded', function () {
         initShowcase('showcase-web', window.PROJECT_DATA.web, L);
     });
 })();
+
+// ===== Teaching: expandable course repositories =====
+document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('.course-repo-toggle').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+            var panel = document.getElementById(btn.getAttribute('data-target'));
+            if (!panel) return;
+            var willOpen = panel.hasAttribute('hidden');
+            if (willOpen) { panel.removeAttribute('hidden'); } else { panel.setAttribute('hidden', ''); }
+            btn.setAttribute('aria-expanded', willOpen ? 'true' : 'false');
+            btn.classList.toggle('open', willOpen);
+        });
+    });
+});

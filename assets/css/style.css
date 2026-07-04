@@ -2138,3 +2138,20 @@ section.bg-light {
 .pub-doi { display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.82rem; font-weight: 600; color: var(--primary-color); text-decoration: none; margin: 0.25rem 0 0.85rem; }
 .pub-doi:hover { text-decoration: underline; }
 .pub-doi i { font-size: 0.72rem; }
+
+
+/* ===== Teaching: course repositories ===== */
+.course-repos { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; margin-top: 2rem; }
+.course-repo-btn { display: flex; flex-direction: column; align-items: center; gap: 0.3rem; text-decoration: none; background: #fff; border: 1px solid #e2e8f0; border-radius: 14px; padding: 1.4rem 1.6rem; min-width: 230px; transition: all 0.25s ease; box-shadow: 0 4px 14px rgba(15,23,42,0.05); }
+.course-repo-btn:hover { transform: translateY(-4px); border-color: var(--primary-color); box-shadow: 0 10px 28px rgba(37,99,235,0.15); }
+.course-repo-btn > i { font-size: 1.8rem; color: var(--primary-color); margin-bottom: 0.2rem; }
+.course-repo-btn .repo-title { font-weight: 700; color: #1e293b; font-size: 0.98rem; }
+.course-repo-btn .repo-sub { font-size: 0.8rem; color: var(--secondary-color); }
+
+
+/* ===== Teaching: expandable repositories ===== */
+.course-repo-toggle { cursor: pointer; font: inherit; -webkit-appearance: none; appearance: none; }
+.course-repos-more { margin-top: 1rem; }
+.course-repos-more[hidden] { display: none; }
+.course-repo-toggle .toggle-chevron { transition: transform 0.25s ease; margin-left: 0.25rem; font-size: 0.7rem; }
+.course-repo-toggle.open .toggle-chevron { transform: rotate(180deg); }
