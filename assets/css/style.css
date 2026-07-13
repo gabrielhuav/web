@@ -185,7 +185,6 @@ section.bg-light {
     transition: var(--transition-normal);
     padding: 1rem 0;
     z-index: 1030;
-    position: relative;
 }
 
 .navbar.scrolled {
@@ -387,22 +386,19 @@ section.bg-light {
 }
 
 .hero-badge {
-    display: inline-flex;
+    display: inline-flex !important;
     align-items: center;
     gap: 0.5rem;
-    background: var(--accent-color);
-    color: var(--white);
+    background-color: #10b981 !important;
+    color: #ffffff !important;
     padding: 0.5rem 1rem;
     border-radius: 50px;
     font-size: 0.875rem;
     font-weight: var(--font-weight-medium);
     margin-bottom: 2rem;
-    animation: pulse 2s infinite;
-}
-
-@keyframes pulse {
-    0%, 100% { transform: scale(1); }
-    50% { transform: scale(1.05); }
+    opacity: 1 !important;
+    visibility: visible !important;
+    display: inline-flex;
 }
 
 .hero-title {

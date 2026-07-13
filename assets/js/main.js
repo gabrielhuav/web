@@ -260,13 +260,16 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-// Parallax effect for hero section
+// Parallax effect for hero content (translates content elements to avoid white background gaps)
 window.addEventListener('scroll', function() {
     const scrolled = window.pageYOffset;
-    const heroSection = document.querySelector('.hero-section');
-    if (heroSection) {
-        const speed = scrolled * 0.5;
-        heroSection.style.transform = `translateY(${speed}px)`;
+    const heroContent = document.querySelector('.hero-content');
+    const heroImage = document.querySelector('.hero-image');
+    if (heroContent) {
+        heroContent.style.transform = `translateY(${scrolled * 0.25}px)`;
+    }
+    if (heroImage) {
+        heroImage.style.transform = `translateY(${scrolled * 0.15}px)`;
     }
 });
 
